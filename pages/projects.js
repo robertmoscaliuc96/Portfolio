@@ -4,7 +4,10 @@ import Footer from '../components/Footer'
 const Projects = () =>(  
       <div>
         <Navbar/>
-        <h1>Welcome to Projects page </h1>
+            <div className="home-image">
+                <div className="dark-overlay">
+                </div>
+            </div>
         <Footer/>
     </div>
     );

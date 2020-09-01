@@ -1,8 +1,10 @@
 
 const Footer = () =>(
 
-    <div>
-        <h1>This is a footer</h1>
+    <div className="footer">
+        <div className="footer-container">
+            <h1>This is a footer</h1>
+        </div>
     </div>
 )
 

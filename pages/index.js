@@ -3,9 +3,12 @@ import Footer from '../components/Footer'
 
 
 const Index = () =>(
-    <div>
+    <div className="homepage">
         <Navbar/>
-        <h1>Welcome to Home page </h1>
+            <div className="home-image">
+                <div className="dark-overlay">
+                </div>
+            </div>
         <Footer/>
     </div>
 )

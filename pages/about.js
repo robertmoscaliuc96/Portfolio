@@ -3,7 +3,10 @@ import Footer from '../components/Footer'
 const About = () =>(  
       <div>
         <Navbar/>
-        <h1>Welcome to About page </h1>
+            <div className="home-image">
+                <div className="dark-overlay">
+                </div>
+            </div>
         <Footer/>
     </div>
     );
