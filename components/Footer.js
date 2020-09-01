@@ -2,7 +2,7 @@
 const Footer = () =>(
 
     <div>
-        <h1>Welcome to Index page </h1>
+        <h1>This is a footer</h1>
     </div>
 )
 
