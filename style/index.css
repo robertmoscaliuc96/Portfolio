@@ -50,6 +50,12 @@
   padding: 2rem 12rem;
 }
 
+.large {
+  font-size: 2.7rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
 
   /* Overlay */
 .dark-overlay {
@@ -92,7 +98,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+  position: fixed;
   padding: 0.1rem 2rem;
   z-index: 1;
   width: 100%;
@@ -115,15 +121,22 @@
   color:#f48c06;
 }
 
+/* Logo */
+
 .logo{
-  font-size: 2rem;
+  font-size: 1.2rem;
   line-height: 80px;
 }
 .logo a {
-  color: #ffffff;
+  color: #d6cbcb;
 }
 .logo a:hover {
   color: #f48c06;
+}
+.logoimg{
+  margin-top: 16px;
+  width: 10rem;
+  cursor: pointer;
 }
 
 .ricon{
@@ -141,7 +154,90 @@
 }
 
 /* Home */
+.home-inner{
+  color: #fff;
+  height: 100%;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  letter-spacing: 0.2em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: text 1s 1;
+  -webkit-animation: text 1s 1;
+}
+.paragraph-2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 3px;
+  word-spacing: 2px;
+  animation: para 3s 1;
+  -webkit-animation: para 3s 1;
+}
 
+.work-button{
+  font-family: "Andale Mono", monospace;
+  letter-spacing: 5px; 
+  align-items: center;
+  font-size: 1.1rem;
+  justify-content: center;
+  background-color: transparent;
+  color: #f48c06;
+  align-items: center;
+  padding: 0.4rem 2rem;
+  margin-top: 1.23rem;
+  border: 3px solid #f7f7f7;
+  border-radius: 4px;
+  box-shadow: 0 0 1px #757f85b3;
+  cursor: pointer;
+}
+
+.work-button:hover{
+  color: #f7f7f7;
+  border: 3px solid #f48c06;
+  box-shadow: 0 0 1px #757f85b3;
+}
+
+.font-icons{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap:2rem;
+  font-size: 2rem;
+  padding: 2rem;
+  cursor: pointer;
+}
+/* Animation */
+
+
+@keyframes text {
+  0%{
+    color: black;
+    margin-bottom: -30px;;
+  }
+  30%{
+    letter-spacing: 25px;
+    margin-bottom: -30px;
+  }
+  85%{
+    letter-spacing: 8px;
+    margin-bottom: -30px;
+  }
+}
+
+@keyframes para {
+0%{
+  opacity: 0;
+}
+45%{
+  opacity:0;
+}
+85%{
+  opacity: 1;
+}
+
+}
 
 
 /* Projects */
