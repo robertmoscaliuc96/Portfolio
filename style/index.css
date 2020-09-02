@@ -147,10 +147,11 @@
 /* Footer */
 
 .footer{
+  border-top: 1px solid #0e0d0d;
   padding: 2rem 10rem;
   background-color: black;
   text-align: center;
-  color:#ffffff;
+  color:#a89b9b;
 }
 
 .footer-container{

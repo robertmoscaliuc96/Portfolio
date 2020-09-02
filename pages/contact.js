@@ -1,5 +1,5 @@
 import Navbar from '../components/layout/Navbar'
-import Footer from '../components//layoutFooter'
+import Footer from '../components/layout/Footer'
 
 const Contact = () =>(  
       <div>
