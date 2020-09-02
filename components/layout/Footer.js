@@ -25,7 +25,7 @@ const Footer = () =>(
 
         </div>
         <div className="copyright">
-            <p><FontAwesomeIcon icon={faCopyright}></FontAwesomeIcon>Design and Create by Robert Moscaliuc</p>
+            <p><FontAwesomeIcon icon={faCopyright}></FontAwesomeIcon> Design and Create by Robert Moscaliuc</p>
             </div>
     </div>
     

@@ -285,8 +285,18 @@
 
 /* Projects */
 
-
-
+.project-inner{
+  padding: 10rem 15rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:2rem;
+}
+.project-box{
+  background-color: #f7f7f7;
+  padding: 7rem 2rem;
+  border-radius: 1.4rem;
+  box-shadow: 3px 3px 3px 3px rgb(27, 27, 37);
+}
 /* About */
 
 
