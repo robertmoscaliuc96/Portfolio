@@ -17,9 +17,9 @@ const Footer = () =>(
             <div className="footer-icons">
                             <p>Or you can find me here</p>
                             <div className="footer-link">
-                                <Link className="footer-link1" href="https://github.com/robertmoscaliuc96"><FontAwesomeIcon icon={faGithub} /></Link>
+                                <a className="footer-link1" href="https://github.com/robertmoscaliuc96"><FontAwesomeIcon icon={faGithub} /></a>
                                 
-                                <Link className="footer-link1" href="https://www.linkedin.com/in/robertmoscalir243004/"><FontAwesomeIcon icon={faLinkedinIn} /></Link>
+                                <a className="footer-link1" href="https://www.linkedin.com/in/robertmoscalir243004/"><FontAwesomeIcon icon={faLinkedinIn} /></a>
                             </div>
             </div>
 

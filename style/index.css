@@ -177,6 +177,7 @@
   cursor: pointer;
 }
 .footer-link {
+  color: #d6cbcb;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   padding-left: 8rem;
@@ -184,6 +185,14 @@
   justify-items: center;
   align-content: center;
 }
+
+.footer-link a{
+  color: #d6cbcb;
+}
+.footer-link a:hover{
+  color: #f48c06;
+}
+
 .footer-icons p{
   font-size: 1rem;
 }
@@ -209,14 +218,14 @@
   justify-content: center;
   text-align: center;
   animation: text 1s 1;
-  -webkit-animation: text 1s 1;
+  -webkit-animation: para 2s 1;
 }
 .paragraph-2 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
   letter-spacing: 3px;
   word-spacing: 2px;
-  animation: para 3s 1;
+  animation: para 2s 1;
   -webkit-animation: para 3s 1;
 }
 
@@ -243,7 +252,7 @@
   box-shadow: 0 0 1px #757f85b3;
 }
 
-.font-icons{
+.font-icons {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-gap:2rem;
@@ -251,8 +260,15 @@
   padding: 2rem;
   cursor: pointer;
 }
-/* Animation */
+.font-icons a{
+  color: #d6cbcb;
+}
+.font-icons a:hover{
+  color: #f48c06;
+}
 
+
+/* Animation */
 
 @keyframes text {
   0%{
@@ -286,17 +302,123 @@
 /* Projects */
 
 .project-inner{
-  padding: 10rem 15rem;
+  padding: 9rem 16.6rem;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(2,1fr);
   grid-gap:2rem;
 }
-.project-box{
-  background-color: #f7f7f7;
-  padding: 7rem 2rem;
-  border-radius: 1.4rem;
-  box-shadow: 3px 3px 3px 3px rgb(27, 27, 37);
+
+.project-box:hover{
+  
+  box-shadow: 2px 3px #f48d066e;
+
 }
+
+.project-box{
+  background-color: #ffffffc4;
+  padding: 0rem 0rem;
+  border-radius: 1.2rem;
+  box-shadow: 1px 1px 1px 1px rgb(27, 27, 37);
+}
+
+.project-img1 {
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background: url('../public/faq\ 2.PNG') no-repeat center bottom/cover;
+  width: 100%;
+  height: 30vh;
+  padding: 0rem 0rem;
+  border-bottom: 1px solid black;
+}
+.project-img2{
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background: url('../public/gitfinder1.PNG') no-repeat center bottom/cover;
+  width: 100%;
+  height: 30vh;
+  padding: 0rem 0rem;
+  border-bottom: 1px solid black;
+}
+
+.project-title{
+  border-left: 3px solid #f48c06;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 2rem 5.5rem;
+}
+
+.project-description{
+  padding: 0.5rem 2rem;
+
+}
+.project-technologies{
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+
+}
+.project-list{
+  padding: 0.5rem 3rem;
+  list-style-type: disc;
+
+}
+
+.project-link{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap:2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-link a{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 1rem;
+  color: #333;
+  font-size: 2rem;
+  padding: 2rem 4rem;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.project-link a:hover{
+  color: #f48c06;
+}
+
+.project-link1{
+  padding-top: 6.8rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap:2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-link1 a{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 1rem;
+  color: #333;
+  font-size: 2rem;
+  padding: 2rem 4rem;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.project-link1 a:hover{
+  color: #f48c06;
+}
+.space{
+  padding: 7rem;
+  background-color: black ;
+}
+
 /* About */
 
 
