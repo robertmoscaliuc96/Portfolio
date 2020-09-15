@@ -102,7 +102,6 @@
   padding: 0.1rem 2rem;
   z-index: 1;
   width: 100%;
-  opacity: 0.9;
   margin-bottom: 1rem;
   opacity: 0.95;
 }
@@ -475,6 +474,14 @@
 }
 @media (max-width: 900px){
 
+    /* Navbar */
+    .navbar{
+      position: absolute;
+      padding: inherit;
+
+    }
+  /* Footer */
+
   .footer{
     padding: 7rem 2rem;
   }
@@ -485,7 +492,7 @@
     padding: 7rem 2rem;
   }
   .space{
-    padding: 50rem;
+    padding: 45rem;
   }
 
   /* Footer */
