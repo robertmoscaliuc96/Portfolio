@@ -442,7 +442,7 @@
 
 
 .space{
-  padding: 30rem;
+  padding:30rem 0rem;
   background-color: black ;
 }
 
@@ -467,7 +467,7 @@
     padding: auto;
   }
   .space{
-    padding: 50rem;
+    padding: 50rem 0rem;
   }
 
   /* Footer */
@@ -492,7 +492,7 @@
     padding: 7rem 2rem;
   }
   .space{
-    padding: 45rem;
+    padding: 45rem 0rem;
   }
 
   /* Footer */
