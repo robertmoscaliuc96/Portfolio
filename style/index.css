@@ -207,8 +207,8 @@
 
 .home-inner{
   color: #fff;
-  height: 100%;
-  width: 50%;
+  height: 110%;
+  width: 60%;
   margin: auto;
   display: flex;
   letter-spacing: 0.2em;
@@ -316,7 +316,7 @@
 }
 
 .project-box{
-  background-color: #ffffffc4;
+  background-color: #5a5656af;
   padding: 0rem 0rem;
   border-radius: 1.2rem;
   box-shadow: 1px 1px 1px 1px rgb(27, 27, 37);
@@ -361,6 +361,7 @@
 
 .project-title{
   border-left: 3px solid #f48c06;
+  color: #d6cbcb;
   text-align: center;
   font-size: 1.5rem;
   margin: 2rem 20%;
@@ -368,16 +369,19 @@
 
 .project-description{
   padding: 0.5rem 2rem;
+  color: #d6cbcb;
 }
 
 .project-technologies{
   font-weight: bold;
   padding: 0.5rem 2rem;
+  color: #d6cbcb;
 }
 
 .project-list{
   padding: 0.5rem 3rem;
   list-style-type: disc;
+  color: #d6cbcb;
 }
 
 
@@ -389,7 +393,7 @@
 }
 .project-link a{
 
-  color: #333;
+  color: #d6cbcb;
   font-size: 2rem;
   padding: 2rem 4rem;
   cursor: pointer;
@@ -414,7 +418,7 @@
 .project-link1 a{
   display: flex;
 
-  color: #333;
+  color: #d6cbcb;
   font-size: 2rem;
   padding: 10%;
   cursor: pointer;
@@ -426,7 +430,7 @@
 
 .project-link2 a{
   padding: 2rem 0rem;
-  color: #333;
+  color: #d6cbcb;
   font-size: 2rem;
   display: flex;
   gap: 2rem;
@@ -467,7 +471,7 @@
     padding: auto;
   }
   .space{
-    padding: 50rem 0rem;
+    padding: 55rem 0rem;
   }
 
   /* Footer */
@@ -492,7 +496,7 @@
     padding: 7rem 2rem;
   }
   .space{
-    padding: 45rem 0rem;
+    padding: 55rem 0rem;
   }
 
   /* Footer */
