@@ -178,12 +178,11 @@
 }
 .footer-link {
   color: #d6cbcb;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  padding-left: 8rem;
-  padding-right: 8rem;
-  justify-items: center;
-  align-content: center;
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .footer-link a{
@@ -201,6 +200,7 @@
   justify-items: center;
   align-content: center;
   font-size: 0.6rem;
+  padding: 1rem;
 }
 
 /* Home */
@@ -384,15 +384,12 @@
 
 /* LINK */
 .project-link{
-  display: flex;
-  grid-gap:2rem;
+  display: flex;;
   justify-content: center;
   align-items: center;
 }
 .project-link a{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 1rem;
+
   color: #333;
   font-size: 2rem;
   padding: 2rem 4rem;
@@ -406,10 +403,14 @@
 
 
 .project-link1{
-  padding-bottom: 1rem;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 5rem;
+
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  
 }
 .project-link1 a{
   display: flex;
@@ -425,10 +426,15 @@
 
 
 .project-link2 a{
-  padding-bottom: 1rem;
+  padding: 2rem 0rem;
   color: #333;
   font-size: 2rem;
-  padding: 10%;
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 .project-link2 a:hover{
@@ -447,3 +453,40 @@
 
 /* Media */
 
+@media (max-width: 1150px){
+
+  /* Footer */
+  .footer-container{
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 3rem;
+  }
+
+  /* Work */
+  .project-inner{
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 2rem;
+    padding: auto;
+  }
+  .space{
+    padding: 50rem;
+  }
+
+  /* Footer */
+}
+@media (max-width: 900px){
+
+  .footer{
+    padding: 7rem 2rem;
+  }
+  /* Work */
+  .project-inner{
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 2rem;
+    padding: 7rem 2rem;
+  }
+  .space{
+    padding: 50rem;
+  }
+
+  /* Footer */
+}
