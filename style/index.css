@@ -302,10 +302,12 @@
 /* Projects */
 
 .project-inner{
-  padding: 9rem 16.6rem;
+  padding-right: 15rem;
+  padding-left: 15rem;
+  padding-top: 10rem;
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  grid-gap:2rem;
+  grid-gap: 2rem;
 }
 
 .project-box:hover{
@@ -345,37 +347,48 @@
   padding: 0rem 0rem;
   border-bottom: 1px solid black;
 }
+.project-img3{
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background: url('../public/demetriss.PNG') no-repeat center bottom/cover;
+  width: 100%;
+  height: 30vh;
+  padding: 0rem 0rem;
+  border-bottom: 1px solid black;
+}
 
 .project-title{
   border-left: 3px solid #f48c06;
   text-align: center;
   font-size: 1.5rem;
-  margin: 2rem 5.5rem;
+  margin: 2rem 20%;
 }
 
 .project-description{
   padding: 0.5rem 2rem;
-
 }
+
 .project-technologies{
   font-weight: bold;
   padding: 0.5rem 2rem;
-
 }
+
 .project-list{
   padding: 0.5rem 3rem;
   list-style-type: disc;
-
 }
 
+
+/* LINK */
 .project-link{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
+  display: flex;
   grid-gap:2rem;
   justify-content: center;
   align-items: center;
 }
-
 .project-link a{
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -391,31 +404,40 @@
   color: #f48c06;
 }
 
-.project-link1{
-  padding-top: 6.8rem;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-gap:2rem;
-  justify-content: center;
-  align-items: center;
-}
 
-.project-link1 a{
+.project-link1{
+  padding-bottom: 1rem;
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  grid-gap: 1rem;
+  grid-gap: 5rem;
+}
+.project-link1 a{
+  display: flex;
+
   color: #333;
   font-size: 2rem;
-  padding: 2rem 4rem;
+  padding: 10%;
   cursor: pointer;
-  justify-content: center;
-  align-items: center;
 }
 .project-link1 a:hover{
   color: #f48c06;
 }
+
+
+.project-link2 a{
+  padding-bottom: 1rem;
+  color: #333;
+  font-size: 2rem;
+  padding: 10%;
+  cursor: pointer;
+}
+.project-link2 a:hover{
+  color: #f48c06;
+}
+
+
 .space{
-  padding: 7rem;
+  padding: 30rem;
   background-color: black ;
 }
 
@@ -423,4 +445,5 @@
 
 
 
-/* Contact */
+/* Media */
+

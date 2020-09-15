@@ -23,8 +23,8 @@ const Projects = () =>(
                             <li>Express</li>
                         </ul>
                         <div className="project-link">
-                            <a href="https://github.com/robertmoscaliuc96"><FontAwesomeIcon icon={faGithub} /></a>
-                            <a href="https://www.linkedin.com/in/robertmoscalir243004/"><FontAwesomeIcon icon={faChrome} /></a>
+                            <a href="https://github.com/robertmoscaliuc96/FQA-Website"><FontAwesomeIcon icon={faGithub} /></a>
+                            <a href="https://floating-ocean-48991.herokuapp.com/posts"><FontAwesomeIcon icon={faChrome} /></a>
                         </div>
                     </div>
                     <div className="project-box">
@@ -39,9 +39,21 @@ const Projects = () =>(
   
                         </ul>
                         <div className="project-link1">
-                            <a className="project-link" href="https://github.com/robertmoscaliuc96"><FontAwesomeIcon icon={faGithub} /></a>
-                            <a className="project-link" href="https://www.linkedin.com/in/robertmoscalir243004/"><FontAwesomeIcon icon={faChrome} /></a>
+                            <a className="project-link" href="https://github.com/robertmoscaliuc96/GitHub-Finder.git"><FontAwesomeIcon icon={faGithub} /></a>
+                            <a className="project-link" href="https://happy-noyce-52ce35.netlify.app/"><FontAwesomeIcon icon={faChrome} /></a>
                         </div>
+                        
+                    </div>
+                    <div className="project-box">
+                        <div className="project-img3"></div>
+                        <h1 className="project-title">GitHub Finder</h1>
+                        <p className="project-description">Showcase website that its role is to present information about a company and its services. Also, provide a way to communicate directly with the stuff via contact form</p>
+                        <p className="project-technologies"> Freelancing</p>
+
+                        <div className="project-link2">
+                            <a className="project-link" href="https://calm-ridge-27757.herokuapp.com/"><FontAwesomeIcon icon={faChrome} /></a>
+                        </div>
+                        
                     </div>
                 </div>
                 </div>
