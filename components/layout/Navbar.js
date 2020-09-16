@@ -13,7 +13,7 @@ const Navbar = () =>(
         <ul className="nav-item">
             <li className="nav-link"><Link href="/">Home</Link></li>
             <li className="nav-link"><Link href="/projects">Work</Link></li>
-            <li className="nav-link"><Link href="/about">About</Link></li>
+
         </ul>
 
 </div>
@@ -21,3 +21,6 @@ const Navbar = () =>(
 )
 
 export default Navbar;
+
+//<li className="nav-link"><Link href="/about">About</Link></li>
+temporaly
