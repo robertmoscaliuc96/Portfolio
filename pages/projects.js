@@ -1,5 +1,6 @@
 import Navbar from '../components/layout/Navbar'
 import Footer from '../components/layout/Footer'
+import Head from 'next/head'
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -7,6 +8,10 @@ import { faGithub,faChrome} from '@fortawesome/free-brands-svg-icons'
 
 const Projects = () =>(  
       <div>
+        <Head>
+        <title>Robert</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
         <Navbar/>
             <div className="home-image">
                 <div className="dark-overlay">
@@ -54,13 +59,5 @@ const Projects = () =>(
         <Footer/>
     </div>
     );
-/* 
-    <ul className="project-list">
-    <li>React</li>
-    <li>NodeJS</li>
-    <li>MongoDB</li>
-    <li>Express</li>
-</ul>
-*/
 
 export default Projects;

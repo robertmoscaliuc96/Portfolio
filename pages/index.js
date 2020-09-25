@@ -1,6 +1,7 @@
 import Navbar from '../components/layout/Navbar'
 import Footer from '../components/layout/Footer'
 import Link from "next/link"
+import Head from 'next/head'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub,faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
@@ -9,6 +10,10 @@ import { faGithub,faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
 
 const Index = () =>(
     <div className="homepage">
+        <Head>
+        <title>Robert</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
         <Navbar/>
             <div className="home-image">
                 <div className="dark-overlay">

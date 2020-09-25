@@ -1,22 +1,19 @@
 
 import Burger from './Burger'
-
+import Link from 'next/link';
 
 
 
 const Navbar = () =>(
-    <div className="navbar">
+    <nav className="navbar">
 
         <div className ="logo">
-            <a href="/"><img className="logoimg" src="/logo.png" alt="Robert"></img>
-            </a>
+            <Link href="/"><img className="logoimg" src="/logo.png" alt="Robert"></img>
+            </Link>
         </div>
         <Burger/>
 
-</div>
-
+</nav>
 )
 
 export default Navbar;
-
-//<li className="nav-link"><Link href="/about">About</Link></li>
