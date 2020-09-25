@@ -1,4 +1,5 @@
-import Link from "next/link"
+
+import Burger from './Burger'
 
 
 
@@ -7,14 +8,10 @@ const Navbar = () =>(
     <div className="navbar">
 
         <div className ="logo">
-            <Link href="/"><img className="logoimg" src="/logo.png" alt="Robert"></img></Link>
+            <a href="/"><img className="logoimg" src="/logo.png" alt="Robert"></img>
+            </a>
         </div>
-
-        <ul className="nav-item">
-            <li className="nav-link"><Link href="/">Home</Link></li>
-            <li className="nav-link"><Link href="/projects">Work</Link></li>
-
-        </ul>
+        <Burger/>
 
 </div>
 
@@ -23,4 +20,3 @@ const Navbar = () =>(
 export default Navbar;
 
 //<li className="nav-link"><Link href="/about">About</Link></li>
-temporaly
