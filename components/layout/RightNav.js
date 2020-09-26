@@ -57,15 +57,15 @@ const RightNav = ({ open }) => {
     <Ul open={open}>
         <ul className="nav-list">
           <li className="nav-item">
-            <Link className="nav-link" href='/'>Home</Link>
+            <Link  href='/'><a className="nav-link">Home</a></Link>
           </li>
 
           <li className="nav-item">
-            <Link className="nav-link" href='/projects'>Projects</Link>
+            <Link  href='/projects'><a className="nav-link">Projects</a></Link>
           </li>
 
           <li className="nav-item">
-            <Link className="nav-link" href='/about'>About</Link>
+            <Link href='/about'><a className="nav-link">About</a></Link>
           </li>
          </ul>
     </Ul>

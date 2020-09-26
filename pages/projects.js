@@ -11,6 +11,7 @@ const Projects = () =>(
         <Head>
         <title>Robert</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         </Head>
         <Navbar/>
             <div className="home-image">
@@ -43,7 +44,7 @@ const Projects = () =>(
                         <div className="project-img3"></div>
                         <h1 className="project-title">Freelancing </h1>
                         <p className="project-description">Showcase website that its role is to present services, information about a company and a contact form that send messages to the company staff.</p>
-                        <p className="project-technologies"> Freelancing</p>
+                        <p className="project-technologies"> React Next.js</p>
 
                         <div className="project-link2">
                             <a  href="https://calm-ridge-27757.herokuapp.com/"><FontAwesomeIcon icon={faChrome} /></a>
