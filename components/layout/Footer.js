@@ -1,8 +1,12 @@
-
+import { ReactElement } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub,faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn,faGithub} from '@fortawesome/free-brands-svg-icons';
 import {faCopyright} from '@fortawesome/free-regular-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import Link from 'next/link';
 
+
+library.add(faCopyright,faLinkedinIn,faGithub)
 
 const Footer = () =>(
 
@@ -24,7 +28,7 @@ const Footer = () =>(
 
         </div>
         <div className="copyright">
-                <p><FontAwesomeIcon icon={faCopyright}></FontAwesomeIcon> Design and Create by Robert Moscaliuc</p>
+                <p className="copyright"><FontAwesomeIcon icon={faCopyright}></FontAwesomeIcon> Design and Create by Robert Moscaliuc</p>
             </div>
     </div>
     

@@ -1,10 +1,13 @@
 import Navbar from '../components/layout/Navbar'
 import Footer from '../components/layout/Footer'
 import Head from 'next/head'
+import Link from 'next/link';
 
-
+import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub,faChrome} from '@fortawesome/free-brands-svg-icons'
+
+library.add(faGithub, faChrome)
 
 const Projects = () =>(  
       <div>
