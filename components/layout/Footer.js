@@ -12,6 +12,7 @@ const Footer = () =>(
 
     <div className="footer">
         <div className="footer-container">
+
             <div className="footer-email">
                 <p>Fell free to email me</p>
                 <p className="email-footer">robertmoscaliuc96@gmail.com</p>    

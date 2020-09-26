@@ -47,7 +47,7 @@ const Projects = () =>(
                         <div className="project-img3"></div>
                         <h1 className="project-title">Freelancing </h1>
                         <p className="project-description">Showcase website that its role is to present services, information about a company and a contact form that send messages to the company staff.</p>
-                        <p className="project-technologies"> React Next.js</p>
+                        <p className="project-technologies"> React Node.js Nodemailer</p>
 
                         <div className="project-link2">
                             <a  href="https://calm-ridge-27757.herokuapp.com/"><FontAwesomeIcon icon={faChrome} /></a>
