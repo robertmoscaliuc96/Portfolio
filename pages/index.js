@@ -23,7 +23,7 @@ const Index = () =>(
                         <Link href="/projects"><button className="work-button">My Work</button></Link>
                         
                         <div className="font-icons">
-                            <a className="font-link" href="https://github.com/robertmoscaliuc96"><FontAwesomeIcon icon={faGithub} /></a>
+                            <a className="font-link" href="https://github.com/robertmoscaliuc96"><i className="fab fa-github"></i></a>
                             <a className="font-link" href="https://www.linkedin.com/in/robertmoscalir243004/"><FontAwesomeIcon icon={faLinkedinIn} /></a>
                         </div>
                     </div>    

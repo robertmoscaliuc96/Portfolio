@@ -8,7 +8,7 @@ const About = () =>(
         <Head>
         <title>Robert</title>
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous"></link>
         </Head>
 
         <Navbar/>

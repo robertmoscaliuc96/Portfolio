@@ -1,4 +1,3 @@
-import Link from "next/link"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub,faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
@@ -25,7 +24,7 @@ const Footer = () =>(
 
         </div>
         <div className="copyright">
-            <p> Design and Create by Robert Moscaliuc</p>
+                <p><FontAwesomeIcon icon={faCopyright}></FontAwesomeIcon> Design and Create by Robert Moscaliuc</p>
             </div>
     </div>
     
