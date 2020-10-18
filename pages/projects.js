@@ -24,7 +24,7 @@ const Projects = () =>(
                         <div className="project-img1"></div>
                         <h1 className="project-title">Developers FAQ</h1>
                         <p className="project-description">Full-stack application using MERN stack for a FAQ website where users can authenticate, ask questions and get answer from other developers.</p>
-                        <p className="project-technologies"> React NodeJS Express MongoDB</p>
+                        <p className="project-technologies"> React NodeJS Express MongoDB Redux</p>
 
                         <div className="project-link">
                             <a href="https://github.com/robertmoscaliuc96/FQA-Website"><FontAwesomeIcon icon={faGithub} /></a>
@@ -47,7 +47,7 @@ const Projects = () =>(
                         <div className="project-img3"></div>
                         <h1 className="project-title">Freelancing </h1>
                         <p className="project-description">Showcase website that its role is to present services, information about a company and a contact form that send messages to the company staff.</p>
-                        <p className="project-technologies"> React Node.js Nodemailer</p>
+                        <p className="project-technologies"> React Next Node.js Nodemailer</p>
 
                         <div className="project-link2">
                             <a  href="https://calm-ridge-27757.herokuapp.com/"><FontAwesomeIcon icon={faChrome} /></a>
