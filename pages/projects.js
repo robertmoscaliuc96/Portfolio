@@ -38,8 +38,8 @@ const Projects = () =>(
                         <p className="project-technologies"> React Hooks React Bootstrap</p>
 
                         <div className="project-link">
-                            <a className="project-link" href="https://github.com/robertmoscaliuc96/GitHub-Finder.git"><FontAwesomeIcon icon={faGithub} /></a>
-                            <a className="project-link" href="https://happy-noyce-52ce35.netlify.app/"><FontAwesomeIcon icon={faChrome} /></a>
+                            <a  href="https://github.com/robertmoscaliuc96/GitHub-Finder.git"><FontAwesomeIcon icon={faGithub} /></a>
+                            <a  href="https://happy-noyce-52ce35.netlify.app/"><FontAwesomeIcon icon={faChrome} /></a>
                         </div>
                         
                     </div>
