@@ -19,9 +19,9 @@ const About = () =>(
                     <div className="language">
                         <h1>Skills</h1>
                         <h3>Programming language</h3>
-                        <p> JavaScript, HTML5, CSS3, Java</p>
+                        <p> JavaScript, HTML5, CSS3, Java, Python</p>
                         <h3>Libraries / Framework</h3>
-                        <p> React, NodeJS, Express, Bootstrap, JWT, Next.js, </p>
+                        <p> React, NodeJS, Express, Bootstrap, JWT, Next.js </p>
                         <h3>Tools & Platforms</h3>
                         <p> Git, Heroku, Netlify, terminal</p>
                     </div>
