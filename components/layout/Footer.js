@@ -14,12 +14,12 @@ const Footer = () =>(
         <div className="footer-container">
 
             <div className="footer-email">
-                <p>Fell free to email me</p>
+                <p>I'm currently looking for new opportunities don't hesitate to contact me. I will try to response you back I soon as I can.</p>
                 <p className="email-footer">robertmoscaliuc96@gmail.com</p>    
             </div>
 
             <div className="footer-icons">
-                            <p>Or you can find me here</p>
+                            <p>You also can find me here</p>
                             <div className="footer-link">
                                 <a className="footer-link1" href="https://github.com/robertmoscaliuc96"><FontAwesomeIcon icon={faGithub} /></a>
                                 

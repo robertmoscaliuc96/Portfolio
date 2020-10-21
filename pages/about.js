@@ -21,7 +21,7 @@ const About = () =>(
                         <h3>Programming language</h3>
                         <p> JavaScript, HTML5, CSS3, Java, Python</p>
                         <h3>Libraries / Framework</h3>
-                        <p> React, NodeJS, Express, Bootstrap, JWT, Next.js,  </p>
+                        <p> React, NodeJS, Express, Bootstrap, JWT, Next.js, Redux </p>
                         <h3>Others</h3>
                         <p>MongoDB, SQLite, Git, Heroku, Netlify, terminal</p>
                     </div>

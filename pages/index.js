@@ -22,7 +22,7 @@ const Index = () =>(
                 <div className="dark-overlay">
                     <div className="home-inner">
                         <h1 className="large">Hi I'm Robert Moscaliuc</h1>
-                        <p className="paragraph-2">Full stack Web Developer with a background in Computer Science.</p>
+                        <p className="paragraph-2">I'm an enthusiastic software developer, that covers the full-stack development of a website and aims to build responsive and engaging products.</p>
                         <Link href="/projects"><button className="work-button">My Work</button></Link>
                         
                         <div className="font-icons">
