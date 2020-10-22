@@ -2,6 +2,7 @@ import Navbar from '../components/layout/Navbar'
 import Footer from '../components/layout/Footer'
 import Head from 'next/head'
 import Link from 'next/link';
+import HeadInner from '../components/layout/Head'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -11,11 +12,7 @@ library.add(faGithub, faChrome)
 
 const Projects = () =>(  
       <div>
-        <Head>
-        <title>Robert</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        </Head>
+        <HeadInner/>
         <Navbar/>
             <div className="home-image">
                 <div className="dark-overlay">

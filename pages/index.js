@@ -2,6 +2,7 @@ import Navbar from '../components/layout/Navbar'
 import Footer from '../components/layout/Footer'
 import Link from "next/link"
 import Head from 'next/head'
+import HeadInner from '../components/layout/Head'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -11,12 +12,7 @@ library.add(faGithub, faLinkedinIn)
 
 const Index = () =>(
     <div className="homepage">
-        <Head>
-            <title>Robert</title>
-            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-            <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"></link>
-        </Head>
+        <HeadInner/>
         <Navbar/>
             <div className="home-image">
                 <div className="dark-overlay">
