@@ -19,7 +19,7 @@ const Footer = () =>(
             </div>
 
             <div className="footer-icons">
-                            <p>You also can find me here</p>
+                            <p>Also you can find me here</p>
                             <div className="footer-link">
                                 <a className="footer-link1" href="https://github.com/robertmoscaliuc96"><FontAwesomeIcon icon={faGithub} /></a>
                                 

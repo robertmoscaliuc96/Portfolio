@@ -1,6 +1,6 @@
 
 import Burger from './Burger'
-import Link from 'next/link';
+
 
 
 
@@ -8,8 +8,7 @@ const Navbar = () =>(
     <nav className="navbar">
 
         <div className ="logo">
-            <Link href="/">.Robert
-            </Link>
+            <p>.robert</p>
         </div>
         <Burger/>
 

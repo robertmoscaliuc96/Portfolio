@@ -52,6 +52,11 @@
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 1rem;
+  
+}
+
+.large::first-letter {
+  color: var(--primary-color);
 }
 
 
@@ -118,8 +123,15 @@
 /* Logo */
 
 .logo{
-  font-size: 1.2rem;
-  line-height: 80px;
+  font-size: 2.3rem;
+  line-height: 90px;
+}
+.logo p {
+  color: #d6cbcb;
+}
+.logo p::first-letter{
+  font-size: 2.3;
+  color: var(--primary-color);
 }
 .logo a {
   color: #d6cbcb;
@@ -406,7 +418,7 @@
 
 .space, .space-about{
   padding:0rem 0rem;
-  background-color: black ;
+  background-color: #0d0805;
 }
 
 
@@ -563,6 +575,7 @@
     grid-template-columns: repeat(1,1fr);
     grid-gap: 2rem;
     padding: auto;
+
   }
   .space {
     padding: 35rem 0rem;
@@ -594,7 +607,7 @@
       display: grid;
       grid-template-columns: repeat(1,1fr);
       grid-gap: 2rem;
-      padding: 7rem 2rem;
+      margin: 10% 50%;
     }
     .space{
      padding: 35rem 0rem;
@@ -605,7 +618,7 @@
       grid-gap:5rem;
     }
     .space-about{
-      padding: 7rem 0rem;
+      padding: 12rem 0rem;
     }
 
 }

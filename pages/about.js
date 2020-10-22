@@ -41,7 +41,6 @@ const About = () =>(
                 </div>
             </div>
             <div className="space-about">
-
                 </div>
         <Footer/>
     </div>
