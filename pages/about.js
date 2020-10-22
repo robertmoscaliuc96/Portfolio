@@ -18,7 +18,7 @@ const About = () =>(
                         <h3>Libraries / Framework</h3>
                         <p> React, NodeJS, Express, Bootstrap, JWT, Next.js, Redux </p>
                         <h3>Others</h3>
-                        <p>MongoDB, SQLite, Git, Heroku, Netlify, terminal</p>
+                        <p>MongoDB, SQLite, Git, Heroku, Netlify, Postman terminal</p>
                     </div>
                     <div className="skills">
                         <div className="skills-info">
