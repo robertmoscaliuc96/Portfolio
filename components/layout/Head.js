@@ -14,6 +14,7 @@ const Headinner = () =>(
 
             <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300&display=swap" rel="stylesheet"></link>
             <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"/>
+            <meta name="google-site-verification" content="Ba32u-KoiiSj_e01sV6VyvOYjd3WUX8ebE33O7VHVig" />
 
 
         </Head>
