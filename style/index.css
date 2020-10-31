@@ -7,6 +7,16 @@
     --danger-color: #dc3545;
     --success-color: #28a745;
   }
+:root1 {
+    --primary-color: #343a40;
+    --text-color:#f8f9fa;
+    --dark-color: #212529;
+    --dif-color: #62CBE7;
+    --dif-color2: #18335C;
+    --light-color: #F7FFF7;
+    --danger-color: #dc3545;
+    --success-color: #28a745;
+  }
 
 * {
     box-sizing: border-box;
@@ -125,6 +135,9 @@
 .logo{
   font-size: 2.3rem;
   line-height: 90px;
+}
+.robert-logo{
+  background-color: #212529;
 }
 .logo p {
   color: #d6cbcb;

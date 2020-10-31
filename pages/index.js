@@ -4,6 +4,7 @@ import Link from "next/link"
 import Head from 'next/head'
 import HeadInner from '../components/layout/Head'
 
+
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub,faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
