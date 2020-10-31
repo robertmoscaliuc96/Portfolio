@@ -16,22 +16,26 @@ const Index = () =>(
         <HeadInner/>
         <Navbar/>
             <div className="home-image">
-                <div className="dark-overlay">
                     <div className="home-inner">
-                        <p className="large">Hi I'm Robert Moscaliuc</p>
-                        <p className="paragraph-2">I'm an enthusiastic software developer, that covers the full-stack development of a website and aims to build responsive and engaging products.</p>
-                        <Link href="/projects"><button className="work-button">My Work</button></Link>
-                        
-                        <div className="font-icons">
-                            <a className="font-link" href="https://github.com/robertmoscaliuc96"><FontAwesomeIcon icon={faGithub}/> </a>
-                            <a className="font-link" href="https://www.linkedin.com/in/robertmoscalir243004/"><FontAwesomeIcon icon={faLinkedinIn}/></a>
+                        <div className="home-text">
+                            <p className="large">Hi,</p>
+                            <p className="large-name">I'm Robert,</p>
+                            <p className="large-name">web developer,</p>
+                            <p className="paragraph">I'm an enthusiastic software developer, that covers the full-stack development of a website and aims to build responsive and engaging products.</p>
+                            <div className="button-div">
+                                <Link href="/projects"><button className="work-button">My Work</button></Link>
+                            </div>
+                            
                         </div>
-                    </div>    
-                </div>
+                        <div className="large-logo">
+                            <img src="/r30degree.svg" alt=".robert"  className="big-logo"/>
+                        </div>
+                    </div>
+
                 
             </div>
             
-        <Footer/>
+
     </div>
 )
 

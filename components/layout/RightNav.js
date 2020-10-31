@@ -1,27 +1,12 @@
 import Link from 'next/link';
 import React from 'react';
 import styled from 'styled-components'
+import HeadInner from './Head'
 
 
 
 const Ul = styled.ul`
   
-  ul{
-    list-style: none;
-    display: flex;
-    gap:2rem;
-    flex-flow: row nowrap;
-  }
-  li a:hover{
-      color:#f48c06;
-  }
-  li { 
-    padding: 18px 10 px;
-  }
-  li a{
-
-      color:white;
-  }
 
   @media (max-width: 968px) {
       ul{
@@ -55,19 +40,43 @@ const RightNav = ({ open }) => {
 
   return (
     <Ul open={open}>
-        <ul className="nav-list">
-          <li className="nav-item">
-            <Link  href='/'><a className="nav-link">Home</a></Link>
-          </li>
+    <HeadInner/>
 
-          <li className="nav-item">
-            <Link  href='/projects'><a className="nav-link">Projects</a></Link>
-          </li>
+        <div className="navbar">
 
-          <li className="nav-item">
-            <Link href='/about'><a className="nav-link">About</a></Link>
-          </li>
-         </ul>
+          <div className="logo-navbar">
+            <img src="/robertLogo.svg" alt=".robert" width={100} height={100} className="robert-logo"/>
+          </div>
+
+
+          <div className="page-navbar">
+            <ul className="nav-list">
+              <li className="nav-item">
+                <Link  href='/'><i class="fas fa-home"></i></Link>
+              </li>
+
+              <li className="nav-item">
+                <Link  href='/projects'><i class="fas fa-laptop-code"></i></Link>
+              </li>
+
+              <li className="nav-item">
+                <Link href='/about'><i class="fas fa-info-circle"></i></Link>
+              </li>
+            </ul>
+          </div>
+
+        <div className="social-navbar">
+          <ul className="nav-social">
+              <li className="nav-social-item">
+                <Link  href='/'><i className="fab fa-github"></i></Link>
+              </li>
+
+              <li className="nav-social-item">
+                <Link  href='/projects'><i className="fab fa-linkedin-in"></i></Link>
+              </li>
+            </ul>
+          </div>
+        </div>
     </Ul>
   )
 }

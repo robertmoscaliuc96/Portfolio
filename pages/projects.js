@@ -15,7 +15,6 @@ const Projects = () =>(
         <HeadInner/>
         <Navbar/>
             <div className="home-image">
-                <div className="dark-overlay">
                 <div className="project-inner">
                     <div className="project-box">
                         <div className="project-img1"></div>
@@ -52,12 +51,11 @@ const Projects = () =>(
                         
                     </div>
                 </div>
-                </div>
             </div>
             <div className="space">
 
             </div>
-        <Footer/>
+
     </div>
     );
 
