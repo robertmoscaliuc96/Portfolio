@@ -52,15 +52,15 @@ const RightNav = ({ open }) => {
           <div className="page-navbar">
             <ul className="nav-list">
               <li className="nav-item">
-                <Link  href='/'><i class="fas fa-home"></i></Link>
+                <Link  href='/'><i className="fas fa-home"></i></Link>
               </li>
 
               <li className="nav-item">
-                <Link  href='/projects'><i class="fas fa-laptop-code"></i></Link>
+                <Link  href='/work'><i className="fas fa-laptop-code"></i></Link>
               </li>
 
               <li className="nav-item">
-                <Link href='/about'><i class="fas fa-info-circle"></i></Link>
+                <Link href='/about'><i className="fas fa-info-circle"></i></Link>
               </li>
             </ul>
           </div>
@@ -68,11 +68,14 @@ const RightNav = ({ open }) => {
         <div className="social-navbar">
           <ul className="nav-social">
               <li className="nav-social-item">
-                <Link  href='/'><i className="fab fa-github"></i></Link>
+                <Link  href='https://github.com/robertmoscaliuc96'><i className="fab fa-github"></i></Link>
               </li>
 
               <li className="nav-social-item">
-                <Link  href='/projects'><i className="fab fa-linkedin-in"></i></Link>
+                <Link  href='https://www.linkedin.com/in/robertmoscalir243004/'><i className="fab fa-linkedin-in"></i></Link>
+              </li>
+              <li>
+                <div className="line-social"></div>
               </li>
             </ul>
           </div>

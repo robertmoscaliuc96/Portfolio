@@ -9,7 +9,6 @@ const About = () =>(
         <HeadInner/>
         <Navbar/>
             <div className="home-image">
-
                 <div className="about-inner">
                     <div className="language">
                         <h1>Skills</h1>
@@ -39,9 +38,6 @@ const About = () =>(
 
                 </div>
             </div>
-            <div className="space-about">
-                </div>
-
     </div>
     );
 

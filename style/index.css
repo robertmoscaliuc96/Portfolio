@@ -1,4 +1,4 @@
-:root1 {
+/* :root1 {
     --primary-color: #62CBE7;
     --color:#B9E3C6;
     --dark-color: #05344F;
@@ -6,13 +6,14 @@
     --light-color: #F7FFF7;
     --danger-color: #dc3545;
     --success-color: #28a745;
-  }
+  } */
 :root {
-    --primary-color: #343a40;
+    --dark: #343a40;
+    --light-dark: #4a5157;
     --text-color:#f8f9fa;
     --dark-color: #212529;
     --dif-color: #62CBE7;
-    --dif-color2: #18335C;
+    --logo-color: #161616;
     --light-color: #F7FFF7;
     --danger-color: #dc3545;
     --success-color: #28a745;
@@ -107,7 +108,7 @@
   padding: 0rem 0rem;
   z-index: 1;
   height: 100vh;
-  background-color: #302f33;
+  background-color: var(--dark-color);
   margin-bottom: 0rem;
 }
 
@@ -123,15 +124,13 @@
 
 .nav-item{
   font-size: 2rem;
-  color: #212529;
+  color: var(--light-dark);
   transition-duration: 500ms;
 }
 
 .nav-item:hover{
-  color:#62CBE7;
+  color:var(--dif-color);
 }
-
-
 
 .nav-social{
   display: flex;
@@ -143,11 +142,16 @@
   transition-duration: 500ms;
 }
 .nav-social-item{
-  color:  #212529;
+  color:  var(--light-dark);
   transition-duration: 500ms;
 }
 .nav-social-item:hover{
-  color: #62CBE7;
+  color: var(--dif-color);
+}
+.line-social{
+  width: 0.2rem;
+  height: 5rem;
+  background-color: var(--dif-color);
 }
 /* Logo */
 
@@ -156,7 +160,7 @@
   line-height: 90px;
 }
 .robert-logo{
-  background-color: #17141d;
+  background-color: #161616;
 }
 
 .logoimg{
@@ -236,7 +240,8 @@
 
 .project-inner{
 
-  padding-top: 12rem;
+  margin: auto;
+  padding: 12rem 5rem;
   display: flex;
   gap: 3rem;
   animation: para 2s 1;
@@ -245,147 +250,23 @@
   
 }
 
-.project-box:hover{
-  animation: scale 1.2s 1;
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-  
-  
-}
-
-.project-box{
-  height: 32rem;
-  width: 20rem;
-  background-color: #5a5656c2;
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-  cursor: pointer;
-}
-
-.project-img1 {
-  background: url('../public/faq\ 2.PNG') no-repeat center bottom/cover;
-  border-top-left-radius: 18px;
-  border-top-right-radius: 18px;
-  display: block;
-  width: 100%;
-  height: 15rem;
-  object-fit: cover;
-  border-bottom: 1px solid black;
-}
-.project-img2{
-  background: url('../public/gitfinder1.PNG') no-repeat center bottom/cover;
-  border-top-left-radius: 18px;
-  border-top-right-radius: 18px;
-  display: block;
-  width: 100%;
-  height: 15rem;
-  object-fit: cover;
-  border-bottom: 1px solid black;
-}
-.project-img3{
-  background: url('../public/demetriss.PNG') no-repeat center bottom/cover;
-  border-top-left-radius: 18px;
-  border-top-right-radius: 18px;
-  display: block;
-  width: 100%;
-  height: 15rem;
-  object-fit: cover;
-  border-bottom: 1px solid black;
-}
-
-.project-title{
-  border-left: 3px solid  var(--primary-color);
-  color: #d6cbcb;
-  text-align: center;
-  font-size: 1rem;
-  margin: 1rem 20%;
-}
-
-.project-description{
-  padding: 0.3rem 2rem;
-  color: #d6cbcb;
-  font-size: 0.8rem;
-}
-
-.project-technologies{
-  font-weight: bold;
-  font-size: 0.8rem;
-  padding: 1rem 2rem;
-  color: var(--primary-color);
-}
-/* LINK */
-
-.project-link{
-  display: flex;
-  gap: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  align-items: center;
-}
-
-.project-link a{
-  display: flex;
-  color: #d6cbcb;
-  font-size: 2rem;
-  padding: 1rem 2rem;
-  cursor: pointer;
-  
-}
-.project-link a:hover{
-  color: var(--primary-color);
-}
-
-
-.project-link2{
-  display: flex;
-  gap: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  align-items: center;
-
-
-}
-.project-link2 a{
-  padding: 1rem;
-  color: #d6cbcb;
-  font-size: 2rem;
-  display: flex;
-  gap: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-.project-link2 a:hover{
-  color: var(--primary-color);
-}
-
-
-.space, .space-about{
-  padding:0rem 0rem;
-  background-color: #0d0805;
-}
-
-
 /* Work */
 .card {
-  height: 570px;
+  height: 600px;
   width: 400px;
   min-width: 250px;
-  padding: 1.5rem;
   border-radius: 16px;
-  background: #17141d;
+  background: var(--dark-color);
   box-shadow: -1rem 0 3rem #000;
   display: flex;
+  margin:auto;
   flex-direction: column;
-  transition: .2s;
+  transition: .3s;
   margin: 0;
   scroll-snap-align: start;
   clear: both;
   position: relative;
+  animation: para 2s 1;
 }
 
 .card-list {
@@ -409,7 +290,7 @@
   height: 10px;
 }
 .card-list::-webkit-scrollbar-thumb {
-  background: #201c29;
+  background: #1b1b1d;
   border-radius: 10px;
   box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
 }
@@ -424,13 +305,64 @@
 .card-header p {
   font-size: 14px;
   margin: 0 0 1rem;
-  color: #7a7a8c;
+  color: var(--light-color);
+}
+
+.card-img,.card-img2,.card-img3{
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  display: block;
+  width: 100%;
+  height: 15rem;
+  background: url('../public/faq\ 2.PNG') no-repeat center bottom/cover;
+}
+.card-img2{
+  background: url('../public/gitfinder1.PNG') no-repeat center bottom/cover;
+}
+.card-img3{
+  background: url('../public/demetriss.PNG') no-repeat center bottom/cover;
+}
+.card-text{
+  padding: 2rem;
+}
+.card-title{
+  font-size: 1.5rem;
+  color: var(--text-color);
+  text-align: center;
+  margin: 1.2rem;
+}
+
+.card-description p{
+  font-size: 1rem;
+  padding: .5rem 1.7rem;
+  color: var(--text-color);
+}
+.card-description p:nth-child(2){
+  color: var(--dif-color);
+  font-size: 1.05rem;
+}
+.card-link{
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+.card-link a{
+  color: var(--light-dark);
+  font-size: 2.5rem;
+  transition-duration: 300ms;
+}
+.card-link a:hover{
+  color: var(--dif-color);
+
 }
 
 
 /* About */
 .about-inner{
-  margin: 15% 10%;
+  margin: auto;
+  padding: 22% 2rem;
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-gap:1rem;
@@ -439,16 +371,16 @@
 }
 
 .language h1{
-  color: #d6cbcb;
+  color: var(--text-color);
   font-size: 3rem;
 }
 .language h3 {
-  color: var(--primary-color);
+  color: var(--dif-color);
   font-size: 1.8rem;
   padding: 10px 0;
 }
 .language p{
-  color: #d6cbcb;
+  color: var(--text-color);
   font-size: 1.3rem;
 }
 
@@ -462,7 +394,7 @@
 }
 .skills h3{
   padding: 2rem 0;
-  color: #d6cbcb;
+  color: var(--text-color);
   text-align: right;
 }
 .img-about{

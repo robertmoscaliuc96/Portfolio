@@ -23,7 +23,7 @@ const Index = () =>(
                             <p className="large-name">web developer,</p>
                             <p className="paragraph">I'm an enthusiastic software developer, that covers the full-stack development of a website and aims to build responsive and engaging products.</p>
                             <div className="button-div">
-                                <Link href="/projects"><button className="work-button">My Work</button></Link>
+                                <Link href="/work"><button className="work-button">My Work</button></Link>
                             </div>
                             
                         </div>
