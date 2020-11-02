@@ -162,7 +162,6 @@
 .home-inner{
     display:flex;
     flex-flow: row nowrap;
-    position: relative;
     line-height: 3rem;
     
 }
