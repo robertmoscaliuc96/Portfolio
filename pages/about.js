@@ -1,11 +1,9 @@
 import Navbar from '../components/layout/Navbar'
-
-
 import HeadInner from '../components/layout/Head'
 
 
 const About = () =>(  
-      <div>
+      <div className="homepage">
         <HeadInner/>
         <Navbar/>
             <div className="home-image">
