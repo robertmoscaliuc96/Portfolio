@@ -6,6 +6,7 @@ import HeadInner from './Head'
 
 
 const Ul = styled.ul`
+
   
 
   @media (max-width: 968px) {
@@ -45,7 +46,7 @@ const RightNav = ({ open }) => {
         <div className="navbar">
 
           <div className="logo-navbar">
-            <img src="/robertLogo.svg" alt=".robert" width={100} height={100} className="robert-logo"/>
+            <img src="/robertlogo.png" alt=".robert" className="robert-logo"/>
           </div>
 
 

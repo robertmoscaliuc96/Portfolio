@@ -1,8 +1,8 @@
 import Navbar from '../components/layout/Navbar'
-import Footer from '../components/layout/Footer'
+
 
 import HeadInner from '../components/layout/Head'
-import Link from 'next/link';
+
 
 const About = () =>(  
       <div>
@@ -21,10 +21,10 @@ const About = () =>(
                     </div>
                     <div className="skills">
                         <div className="skills-info">
-                            <h3>Back-end integration</h3>
-                            <h3>Debugging</h3>
-                            <h3>Responsive Design</h3>
-                            <h3>Api integration</h3>
+                            <p>Back-end integration</p>
+                            <p>Debugging</p>
+                            <p>Responsive Design</p>
+                            <p>Api integration</p>
                         </div>
                         <div className="skill-icon">
                             <img src="/backend.png" alt="my image" className="img-about"/>
@@ -34,8 +34,6 @@ const About = () =>(
                         </div>
 
                     </div>
-
-
                 </div>
             </div>
     </div>

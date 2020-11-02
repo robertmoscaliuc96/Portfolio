@@ -1,7 +1,7 @@
 import Navbar from '../components/layout/Navbar'
-import Footer from '../components/layout/Footer'
+
 import Link from "next/link"
-import Head from 'next/head'
+
 import HeadInner from '../components/layout/Head'
 
 
