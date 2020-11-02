@@ -3,9 +3,10 @@ import Footer from '../components/layout/Footer'
 import Head from 'next/head'
 import Link from 'next/link';
 import Headinner from '../components/layout/Head'
+import { Fragment } from 'react';
 
 const Test = () =>(  
-      <div>
+      <Fragment>
 
         <Head>
         <title>Robert</title>
@@ -14,49 +15,26 @@ const Test = () =>(
         </Head>
 
         <Navbar/>
-            <div className="home-image">
-                <div className="dark-overlay">
-                <div className="about-inner">
-                    <div className="language">
-                        <h1>Skills</h1>
-                        <h3>Programming language</h3>
-                        <p> JavaScript, HTML5, CSS3, Java</p>
-                        <h3>Libraries / Framework</h3>
-                        <p> React, NodeJS, Express, Bootstrap, JWT, Next.js, </p>
-                        <h3>Tools & Platforms</h3>
-                        <p> Git, Heroku, Netlify, terminal</p>
-                    </div>
-                    <div className="skills">
-                        <div className="skills-info">
-                            <h3>Back-end integration</h3>
-                            <h3>Debugging</h3>
-                            <h3>Responsive Design</h3>
-                            <h3>Api integration</h3>
+        <div className="home-image">
+                    <div className="test-inner">
+                        <div className="home-text">
+                            <p className="large">Hi,</p>
+                            <p className="large-name">I'm Robert,</p>
+                            <p className="large-name">web developer,</p>
+                            <p className="paragraph">I'm an enthusiastic software developer, that covers the full-stack development of a website and aims to build responsive and engaging products.</p>
+                            <div className="button-div">
+                                <Link href="/work"><button className="work-button">My Work</button></Link>
+                            </div>
+                            
                         </div>
-                        <div className="skill-icon">
-                            <img src="/backend.png" alt="my image" className="img-about"/>
-                            <img src="/bug.png" alt="my image" className="img-about"/>
-                            <img src="/responsive.png" alt="my image" className="img-about"/>
-                            <img src="/api.png" alt="my image" className="img-about"/>
+                        <div className="large-logo">
+                            <img src="/r30degree.svg" alt=".robert"  className="big-logo"/>
                         </div>
-
                     </div>
 
-
-                </div>
-                </div>
+                
             </div>
-            <div className="home-image2">
-                <div className="dark-overlay"></div>
-            </div>
-            <div className="home-image3">
-            <div className="dark-overlay"></div>
-            </div>
-            <div className="space-about">
-
-                </div>
-        <Footer/>
-    </div>
+    </Fragment>
     );
 
 export default Test;

@@ -6,7 +6,6 @@ import HeadInner from './Head'
 
 
 const Ul = styled.ul`
-
   
 
   @media (max-width: 968px) {
@@ -14,8 +13,10 @@ const Ul = styled.ul`
       flex-flow: column nowrap;
       padding-top:5rem;
       font-size:1.4rem;
+      position: relative;
       justify-content:center;
       align-items:center;
+      z-index: 1;
 
       }
     

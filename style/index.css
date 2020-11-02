@@ -51,7 +51,7 @@
 
 /* Utilities */
 .large, .large-name{
-  font-size:calc(25px + 3vw);
+  font-size: calc(25px + 3vw);
   font-weight: bold;
   line-height: 1;
   margin-bottom: 1rem;
@@ -78,16 +78,14 @@
   overflow: hidden;
 }
 .home-image{
-  position: relative;
+  position: absolute;
   background: url('../public/background5.png') no-repeat center top/cover;
   width: 100%;
   height: 100vh;
   margin: auto;
-  padding: 0% 10%;
   overflow-x: auto;
-
-
   }
+
 
 /* NavBar */
 
@@ -99,7 +97,7 @@
   z-index: 1;
   height: 100vh;
   background-color: var(--dark-color);
-  margin-bottom: 0rem;
+  
 }
 
 .nav-list{
@@ -127,7 +125,7 @@
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.1vw;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
   transition-duration: 300ms;
 }
@@ -162,20 +160,17 @@
 
 
 .home-inner{
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    position: fixed;
-    justify-content: center;
-    align-items: center;
+    display:flex;
+    flex-flow: row nowrap;
+    position: relative;
     line-height: 3rem;
+    
 }
 .home-text{
-  margin: auto;
-  padding-top: 40%;
+  padding: 20% 10%;
   color: var(--text-color);
-  width: 80%;
+  width: 70%;
   transition-duration: 300ms;
-  
   animation: text 1s 1;
   -webkit-animation: para 2s 1;
 }
@@ -189,8 +184,9 @@
 }
 
 .large-logo{
-  width: 100%;
-  height: 40vw;
+  padding-top: 0;
+  width: 70%;
+  height: 1vw;
   animation: logo 2s 1;
   -webkit-animation: logo 3s 1;
   transition-duration: 1000ms;
@@ -201,11 +197,11 @@
 }
 
 .button-div{
-  padding: 1.2rem 0rem;
+  padding: 1.5rem 0rem;
 }
 .work-button{
   align-items: center;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 500;
   background-color: transparent;
   color: var(--diff-color);
@@ -538,60 +534,6 @@
 
 /* Media */
 
-@media (max-width: 1150px){
-
-  /* Work */
-  .project-inner{
-    display: flex;
-    flex-direction: row;
-  }
-  
-
-  .home-inner{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .card:focus-within~.card, .card:hover~.card {
-    transform: translateX(10px);
-  }
-  .card:hover {
-    transform: translateY(-1rem);
-  }
-  .card:not(:first-child) {
-    margin-left: -10px;
-  }
-  
-}
-@media (max-width: 900px){
-
-    .logo{
-      display: none;
-    }
-    /* Navbar */
-    .navbar{
-      position: absolute;
-      padding: inherit;
-    }
-    /* Work */
-    .project-inner{
-      flex-flow: row;
-    }
-
-
-    .about-inner{
-      padding-top: 25%;
-      grid-template-columns: repeat(1,1fr);
-      grid-gap:5rem;
-    }
-
-}
-@media (min-width: 1600px){
-    .project-inner{
-      flex-flow: row;
-    }
-}
 /*
 
  $desktop: 1200px
@@ -601,9 +543,11 @@
 
 */
 @media (min-width: 1600px){
+
   .paragraph{
    
   }
+
 }
 
 @media (min-width: 1024px){
@@ -615,9 +559,54 @@
   .home-image{
     background: url('../public/backgroundResponsive.png') no-repeat center bottom/cover;
   }
-  .paragraph{
-    padding-right: 20%;
+  .navbar{
+    position: relative;
+    flex-flow: row nowrap;
+    x-index: 1;
+    height: 7.8vh;
   }
+  .nav-list{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+  }
+  .nav-social{
+    padding-top: 20%;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+  }
+  .line-social{
+      display: none;
+  }
+  .large, .large-name{
+    font-size: 6.5vw;
+  }
+
+  .home-image{
+    height: 100vh;
+  }
+
+  .home-text{
+    padding-top: 25%;
+    font-size: 4;
+    width: 80%;
+  }
+
+  .paragraph{
+    padding-right: 10%;
+    font-size: 2.5vw;
+  }
+  .button-div{
+    padding: 1.9rem 0rem;
+  }
+  .work-button{
+    font-size: 1.4rem;
+  }
+  
+
   .large-logo{
     display: none;
   }
