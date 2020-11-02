@@ -15,7 +15,7 @@ const Test = () =>(
         </Head>
 
         <Navbar/>
-        <div className="home-image">
+        <div className="test-image">
                     <div className="test-inner">
                         <div className="home-text">
                             <p className="large">Hi,</p>

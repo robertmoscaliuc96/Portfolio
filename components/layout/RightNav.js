@@ -6,9 +6,18 @@ import HeadInner from './Head'
 
 
 const Ul = styled.ul`
-  
+
+  li a:hover{
+      color:#62CBE7;
+  }
 
   @media (max-width: 968px) {
+      .navbar{
+        display:flex;
+        flex-flow: column nowrap;
+        gap:8rem;
+        height: 0;
+      }
       ul{
       flex-flow: column nowrap;
       padding-top:5rem;
@@ -16,11 +25,23 @@ const Ul = styled.ul`
       position: relative;
       justify-content:center;
       align-items:center;
-      z-index: 1;
-
+      x-index: 1;
+      
       }
+      .robert-logo{
+        display: none;
+      }
+      .nav-social{
+        margin-top:5rem;
+        font-size: 1.8rem;
+      }
+      .line-social{
+          display:block;
+          height: 8rem;
+      }
+
     
-    background-color: #757575;
+    background-color: #212529;
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
@@ -47,27 +68,27 @@ const RightNav = ({ open }) => {
         <div className="navbar">
 
           <div className="logo-navbar">
-            <img src="/robertlogo.png" alt=".robert" className="robert-logo"/>
-          </div>
+              <img src="/robertlogo.png" alt=".robert" className="robert-logo"/>
+            </div>
 
 
           <div className="page-navbar">
-            <ul className="nav-list">
-              <li className="nav-item">
-                <Link  href='/'><i className="fas fa-home"></i></Link>
-              </li>
+              <ul className="nav-list">
+                <li className="nav-item">
+                  <Link  href='/'><i className="fas fa-home"></i></Link>
+                </li>
 
-              <li className="nav-item">
-                <Link  href='/work'><i className="fas fa-laptop-code"></i></Link>
-              </li>
+                <li className="nav-item">
+                  <Link  href='/work'><i className="fas fa-laptop-code"></i></Link>
+                </li>
 
-              <li className="nav-item">
-                <Link href='/about'><i className="fas fa-info-circle"></i></Link>
-              </li>
-            </ul>
-          </div>
+                <li className="nav-item">
+                  <Link href='/about'><i className="fas fa-info-circle"></i></Link>
+                </li>
+              </ul>
+            </div>
 
-        <div className="social-navbar">
+          <div className="social-navbar">
           <ul className="nav-social">
               <li className="nav-social-item">
                 <Link  href='https://github.com/robertmoscaliuc96'><i className="fab fa-github"></i></Link>

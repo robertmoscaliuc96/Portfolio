@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import RightNav from './RightNav';
-import Link from 'next/link';
 
 const StyledBurger = styled.div`
   width: 2rem;
@@ -11,6 +10,9 @@ const StyledBurger = styled.div`
   right: 20px;
   z-index: 20;
   display: none;
+  cursor: pointer;
+
+
 
   @media (max-width: 968px) {
     display: flex;
