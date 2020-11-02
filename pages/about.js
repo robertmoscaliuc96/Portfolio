@@ -9,7 +9,7 @@ const About = () =>(
             <div className="home-image">
                 <div className="about-inner">
                     <div className="language">
-                        <h1>Skills</h1>
+                        <h1 className="large-skill">Skills.</h1>
                         <h3>Programming language</h3>
                         <p> JavaScript, HTML5, CSS3, Java, Python</p>
                         <h3>Libraries / Framework</h3>

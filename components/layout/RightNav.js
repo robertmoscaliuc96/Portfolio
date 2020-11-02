@@ -5,6 +5,7 @@ import HeadInner from './Head'
 
 
 
+
 const Ul = styled.ul`
 
   li a:hover{
@@ -68,18 +69,19 @@ const RightNav = ({ open }) => {
         <div className="navbar">
 
           <div className="logo-navbar">
-              <img src="/robertlogo.png" alt=".robert" className="robert-logo"/>
+          <Link href='/'><img src="/robertlogo.png" alt=".robert" className="robert-logo"/></Link>
+
             </div>
 
 
           <div className="page-navbar">
               <ul className="nav-list">
                 <li className="nav-item">
-                  <Link  href='/'><i className="fas fa-home"></i></Link>
+                  <Link href='/'><i className="fas fa-home"></i></Link>
                 </li>
 
                 <li className="nav-item">
-                  <Link  href='/work'><i className="fas fa-laptop-code"></i></Link>
+                  <Link href='/work'><i className="fas fa-laptop-code"></i></Link>
                 </li>
 
                 <li className="nav-item">
