@@ -706,6 +706,9 @@
     word-spacing: normal;
     width: 100%;
   }
+  .work-button{
+    font-size: 1rem;
+  }
   .paragraph{
     padding-right: 5%;
     font-size: calc(5px + 2.8vw);
