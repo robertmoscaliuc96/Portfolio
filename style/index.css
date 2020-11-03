@@ -695,6 +695,8 @@
   }
 
   .home-text{
+    margin-right: 0;
+    padding-right: 2rem;
     padding-top: 28%;
     padding-left: 4rem;
     padding-bottom: 0;
