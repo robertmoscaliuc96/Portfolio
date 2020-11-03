@@ -6,7 +6,7 @@ const About = () =>(
       <div className="homepage">
         <HeadInner/>
         <Navbar/>
-            <div className="home-image">
+            <div className="about-image">
                 <div className="about-inner">
                     <div className="language">
                         <h1 className="large-skill">Skills.</h1>
