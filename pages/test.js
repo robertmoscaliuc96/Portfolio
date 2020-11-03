@@ -1,5 +1,5 @@
 import Navbar from '../components/layout/Navbar'
-import Footer from '../components/layout/Footer'
+import Map from '../components/layout/Map';
 import Head from 'next/head'
 import Link from 'next/link';
 import Headinner from '../components/layout/Head'
@@ -17,19 +17,7 @@ const Test = () =>(
         <Navbar/>
         <div className="test-image">
                     <div className="test-inner">
-                        <div className="home-text">
-                            <p className="large">Hi,</p>
-                            <p className="large-name">I'm Robert,</p>
-                            <p className="large-name">web developer,</p>
-                            <p className="paragraph">I'm an enthusiastic software developer, that covers the full-stack development of a website and aims to build responsive and engaging products.</p>
-                            <div className="button-div">
-                                <Link href="/work"><button className="work-button">My Work</button></Link>
-                            </div>
-                            
-                        </div>
-                        <div className="large-logo">
-                            <img src="/r30degree.svg" alt=".robert"  className="big-logo"/>
-                        </div>
+                        <Map/>
                     </div>
 
                 

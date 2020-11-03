@@ -85,7 +85,7 @@ const RightNav = ({ open }) => {
                 </li>
 
                 <li className="nav-item">
-                  <Link href='/about'><i className="fas fa-info-circle"></i></Link>
+                  <Link href='/skills'><i className="fas fa-info-circle"></i></Link>
                 </li>
               </ul>
             </div>

@@ -456,6 +456,9 @@
 .img-about:nth-child(4):hover{
   transform: rotate(-360deg)
 }
+.map{
+  margin-left: 200
+}
 
 
 /* Animation */
