@@ -51,7 +51,7 @@
 
 /* Utilities */
 .large, .large-name, .large-skill{
-  font-size: calc(25px + 3vw);
+  font-size: calc(22px + 3vw);
   font-weight: bold;
   line-height: 1;
   margin-bottom: 1rem;
@@ -108,7 +108,6 @@
 }
 
 .nav-list{
-  padding: 8px;
   justify-content: center;
   align-items: center;
   list-style: none;
@@ -125,7 +124,6 @@
 
 .nav-item:hover{
   color:var(--dif-color);
-  display: ;
 }
 
 .nav-social{
@@ -258,7 +256,7 @@
 
 /* Work */
 .card {
-  height: 37rem;
+  height: calc(31.5rem + 7.9vw);
   width: 27rem;
   min-width: 350px;
   border-radius: 16px;
@@ -270,15 +268,6 @@
   animation: para 2s 1;
 }
 
-.large-work{
-  font-size: calc(25px + 3vw);
-  font-weight: bold;
-  line-height: 1;
-  margin-bottom: 1rem;
-  color: var(--light-color);
-  justify-content: unset;
-  align-items: unset;
-}
 
 
 .card:focus-within~.card, .card:hover~.card {
@@ -344,12 +333,8 @@
   padding: .5rem 1.7rem;
   color: var(--text-color);
 }
-.card-description p:nth-child(2){
-  color: var(--dif-color);
-  font-size: 1.05rem;
-}
+
 .card-link{
-  display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -691,10 +676,30 @@
 
 
 @media (max-width: 768px){
+  .home-image{
+    overflow-x: auto;
+  }
     .home-inner{
     display: grid;
     grid-template-columns: repeat(1,1fr);
 
+  }
+  .card-title{
+    font-size: 1.3rem;
+    margin: 1rem;
+  }
+  .card-description p{
+    font-size: .9rem;
+    padding: .5rem 1.7rem;
+  }
+  .card-link a{
+    font-size: 1.8rem;
+  }
+  .card-tech p{
+    padding: 2px 5px;
+    color: var(--dif-color);
+    border: 1px solid var(--dif-color);
+    border-radius: 25px;
   }
 
   .home-text{
@@ -737,6 +742,27 @@
 
   .about-inner{
     line-height: 2.5rem;
+  }
+
+  .navbar{
+    justify-content: unset;
+    align-items: unset;
+    z-index: 1;
+  }
+  .nav-item{
+    font-size: 1.5rem;
+
+  }
+  .nav-social{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+ 
+  }
+  .nav-list{
+    list-style: none;
+    display: flex;
+    gap:2rem;
+    flex-flow: column nowrap;
   }
 
 }

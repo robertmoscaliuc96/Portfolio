@@ -28,7 +28,7 @@ const Index = () =>(
                             
                         </div>
                         <div className="large-logo">
-                            <img src="/r30degree.svg" alt=".robert"  className="big-logo"/>
+                            <img src="/30logo1.png" alt=".robert"  className="big-logo"/>
                         </div>
                     </div>
 
