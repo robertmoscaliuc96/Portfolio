@@ -93,7 +93,7 @@
 .about-image{
   background: url('../public/background5.png') no-repeat center top/cover;
   width: 100%;
-  height: auto;
+  height: 100vh;
   
   }
 
@@ -183,7 +183,7 @@
     
 }
 .home-text{
-  padding: 22rem 10rem;
+  padding: 20rem 10rem;
   color: var(--text-color);
   width: 80%;
   transition-duration: 300ms;
@@ -216,7 +216,7 @@
 .button-div{
   padding: 1.5rem 0rem;
 }
-.work-button{
+.work-button, .contact-button{
   align-items: center;
   font-size: 1.5rem;
   font-weight: 500;
@@ -230,7 +230,7 @@
   transition-duration: 500ms;
 }
 
-.work-button:hover{
+.work-button, .contact-button:hover{
   background-color: var(--dif-color);
   color: var(--dif-color2);
 }
@@ -401,11 +401,13 @@
 .skills{
   display: grid;
   grid-template-columns: repeat(2,1fr);
+
 }
 .skills-info{
   justify-content: center;
   align-items: center;
   font-size: calc(9px + 1vw);
+  line-height: 4.7rem;
 }
 .skills-info p{
   font-size: calc(14px + 1vw);
@@ -446,41 +448,56 @@
   transform: rotate(-360deg)
 }
 
+
+/* About */
 .about-inner{
   display: grid;
   grid-template-columns: repeat(2,1fr);
+  transition-duration: 300ms;
+  gap: 10rem;
+  animation: para 2s 1;
+  -webkit-animation: para 3s 1;
+  
 }
 .about-text{
+  margin-top: 20%;
   margin-left: 20%;
   margin-top: 20%;
   color: var(--text-color);
 }
+.map-inner{
+  height: 100vh;
+  background-color: white;
+}
+
+.paragraph-about{
+  font-weight: 300;
+  line-height: 2rem;
+  word-spacing: 5px;
+  animation: para 2s 1;
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+
+
+}
 .about-text h3{
-  color: var(-);
+  color: var(--dif-color);
 }
 .large-about{
   color:var(--dif-color);
   padding-bottom: 2rem;
+  margin-left: 1rem;
 }
 
-
-.map-inner{
-  height: 100%;
-  width: auto;
-  padding-left: 15%;
-}
 
 .marker-box{
-
   color: var(--text-color);
   font-size: 1.2rem;
   padding: 1rem;
   background-color: var(--light-dark);
   width: calc(22rem + 1vw);
-  height: calc(10rem + 1vw);
-  
-
-
+  height: calc(12rem + 1vw);
+  border-radius: 12px;
 }
 
 .marker-name {
@@ -493,6 +510,32 @@
   font-size: 1.5rem;
 }
 
+.contact-form input, textarea {
+  border: none;
+  background-color: var(--dark);
+  border-bottom: 2px solid var(--dif-color);
+  color: var(--dif-color);
+  margin: 1rem 1rem;
+  width: 100%;
+  height: 4rem;
+  font-size: 1.6rem;
+  padding-left: 0.6rem;
+  padding-top: 0.2rem;
+  transition-duration: 300ms;
+  animation: para 2s 1;
+  -webkit-animation: para 3s 1;
+}
+textarea{
+  margin: 1rem 1rem;
+  width: 100%;
+  height: 8rem;
+  font-size: 1.6rem;
+  resize: none;
+}
+.contact-button{
+  margin-left: 70%;
+  margin-top: 1rem;
+}
 
 /* Animation */
 
@@ -640,7 +683,7 @@
 
 @media (min-width: 1024px) and (max-width:1500px){
     .home-text{
-      width: 100%;
+      margin-bottom: 10%;
     }
 }
 
@@ -683,7 +726,7 @@
     display: none;
   }
   .home-text{
-    padding-top: 25%;
+    padding-top: 20%;
     padding-left: 5rem;
     font-size: 6vw;
     width: 80%;
@@ -719,6 +762,57 @@
   .skill-image{
    height: auto;
   }
+  .about-inner{
+    grid-template-columns: repeat(1,1fr);
+    gap: 0;
+    overflow-x: auto;
+
+  }
+  .about-text{
+    margin: 20% 5%;
+    margin-top: 20%;
+    color: var(--text-color);
+  }
+  .paragraph-about{
+    font-size: 1.5rem;
+  }
+  .about-inner{
+    padding: 0;
+    margin: 0;
+  }
+  .contact-form input, textarea {
+    margin: 1rem 1rem;
+    width: 50%;
+    height: 3rem;
+    font-size: 1.2rem;
+    padding-top: 0.2rem;
+  }
+  .large-about{
+    font-size: calc(40px + 3vw);
+  }
+  .map-inner{
+    height: 50vh;
+    width: auto;
+  }
+  .marker-box{
+    width: 12rem;
+    height: 8rem;
+    font-size: 0.8rem;
+  }
+  .marker-name i{
+    font-size: 0.8rem;
+  }
+  .marker-name{
+    padding: 0;
+  }
+  .contact-button{
+    margin-left: 5rem;
+  }
+  .paragraph-about{
+    font-size: 1.2rem;
+    margin-right: 10%;
+
+  }
 
 }
 
@@ -731,6 +825,10 @@
     display: grid;
     grid-template-columns: repeat(1,1fr);
 
+  }
+  .about-inner{
+    grid-template-columns: repeat(1,1fr);
+    overflow-x: auto;
   }
 
   .card-title{
@@ -751,10 +849,12 @@
     border-radius: 25px;
   }
 
+
+
   .home-text{
     margin-right: 0;
     padding-right: 2rem;
-    padding-top: 28%;
+    padding-top: 25%;
     padding-left: 4rem;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -776,6 +876,8 @@
       margin-top: 0;
       display: inline;
       gap:0;
+      height: 10rem;
+      width: 15rem;
   }
   .work-inner{
     justify-content: left;
@@ -813,9 +915,14 @@
     gap:2rem;
     flex-flow: column nowrap;
   }
+  .skills-info{
+    line-height: 1.1rem;
+  }
 
 }
 @media (min-width: 480px){
 
-
+  .skills-info{
+    line-height: 1rem;
+  }
 }
