@@ -1,5 +1,6 @@
 import Navbar from '../components/layout/Navbar'
 import HeadInner from '../components/layout/Head'
+import Map from '../components/layout/Map';
 
 
 const About = () =>(  
@@ -7,9 +8,23 @@ const About = () =>(
         <HeadInner/>
         <Navbar/>
             <div className="about-image">
+            <div className="about-inner">
+
+              <div className="about-text">
+                        <h1 className="large-about">Contact me</h1>
+                        <p className="paragraph">I am interested in any entry-level opportunities.</p>
+                    </div>
+            
+
+              <div className="map-inner">
+                 <Map/>
+              </div>
+            </div>
+            </div>
+
 
             </div>
-    </div>
+
     );
 
 export default About;

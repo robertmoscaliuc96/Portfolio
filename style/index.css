@@ -50,7 +50,7 @@
 
 
 /* Utilities */
-.large, .large-name, .large-skill{
+.large, .large-name, .large-skill, .large-about{
   font-size: calc(22px + 3vw);
   font-weight: bold;
   line-height: 1;
@@ -84,13 +84,17 @@
   margin: auto;
   overflow-x: unset;
   }
-.about-image{
+.skill-image{
   background: url('../public/background5.png') no-repeat center top/cover;
   width: 100%;
   height: 100vh;
 
+  }
+.about-image{
+  background: url('../public/background5.png') no-repeat center top/cover;
+  width: 100%;
+  height: auto;
   
-
   }
 
 
@@ -102,8 +106,9 @@
   justify-content: space-between;
   position: absolute;
   z-index: 1;
-  height: 100vh;
+  height: 100%;
   background-color: var(--dark-color);
+  
   
 }
 
@@ -256,7 +261,7 @@
 
 /* Work */
 .card {
-  height: calc(31.5rem + 7.9vw);
+  height: 37rem;
   width: 27rem;
   min-width: 350px;
   border-radius: 16px;
@@ -365,15 +370,14 @@
 
 
 /* About */
-.about-inner{
+.skill-inner{
   margin: auto;
   padding: 20rem 10rem;
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-gap:1rem;
   animation: para 2s 1;
-  line-height: 5rem;
-
+  line-height: 4rem;
   
 }
 
@@ -406,11 +410,11 @@
 .skills-info p{
   font-size: calc(14px + 1vw);
   color: var(--text-color);
-  padding: 2rem 0;
-  text-align: right;
+  padding: 2.8rem 0;
+  text-align: center;
 }
 .img-about{
-  width:75px;
+  width:calc(60px + 3vw);
   transition-duration: 300ms;
 }
 
@@ -441,8 +445,52 @@
 .img-about:nth-child(4):hover{
   transform: rotate(-360deg)
 }
-.map{
-  margin-left: 200
+
+.about-inner{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.about-text{
+  margin-left: 20%;
+  margin-top: 20%;
+  color: var(--text-color);
+}
+.about-text h3{
+  color: var(-);
+}
+.large-about{
+  color:var(--dif-color);
+  padding-bottom: 2rem;
+}
+
+
+.map-inner{
+  height: 100%;
+  width: auto;
+  padding-left: 15%;
+}
+
+.marker-box{
+
+  color: var(--text-color);
+  font-size: 1.2rem;
+  padding: 1rem;
+  background: url('../public/marker.png') no-repeat center bottom/cover;
+  width: calc(23rem + 1vw);
+  height: calc(12rem + 1vw);
+  
+
+
+}
+
+.marker-name {
+  display: flex;
+  padding-top: 1rem;
+  letter-spacing: 1.5px;
+}
+.marker-name i{
+  color: var(--dif-color);
+  font-size: 1.5rem;
 }
 
 
@@ -662,13 +710,13 @@
   .work-inner{
     padding: 20% 10%;
   }
-  .about-inner{
+  .skill-inner{
     grid-template-columns: repeat(1,1fr);
     padding: 10rem 5rem;
     gap: 10rem;
-    line-height: 2.5rem;
+    line-height: 2.2rem;
   }
-  .about-image{
+  .skill-image{
    height: auto;
   }
 
@@ -682,6 +730,9 @@
     .home-inner{
     display: grid;
     grid-template-columns: repeat(1,1fr);
+
+  }
+  .card{
 
   }
   .card-title{

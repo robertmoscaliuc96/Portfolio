@@ -6,8 +6,8 @@ const Skills = () =>(
       <div className="homepage">
         <HeadInner/>
         <Navbar/>
-            <div className="about-image">
-                <div className="about-inner">
+            <div className="skill-image">
+                <div className="skill-inner">
                     <div className="language">
                         <h1 className="large-skill">Skills.</h1>
                         <h3>Programming language</h3>
@@ -19,7 +19,7 @@ const Skills = () =>(
                     </div>
                     <div className="skills">
                         <div className="skills-info">
-                            <p>Back-end integration</p>
+                            <p>Backend integration</p>
                             <p>Debugging</p>
                             <p>Responsive Design</p>
                             <p>Api integration</p>
