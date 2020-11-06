@@ -1,15 +1,6 @@
 import Navbar from '../components/layout/Navbar'
-
 import Link from "next/link"
-
 import HeadInner from '../components/layout/Head'
-
-
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub,faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
-
-library.add(faGithub, faLinkedinIn)
 
 const Index = () =>(
     <div className="homepage">
