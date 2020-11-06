@@ -14,14 +14,15 @@ const About = () =>(
                     <p className="paragraph-about">I am interested in any entry-level opportunities.</p>
                 <div className="contact-form">
                     <form className="form">
-                      <div className="form-group">
-                        <input type="text" placeholder="Name"/>
-                        <input type="text" placeholder="Email"/>
-                      </div>
+
+                      <input type="text" placeholder="Name"/>
+                      <input type="text" placeholder="Email"/>
                       <input type="text" placeholder="Subject"/>
                       <textarea type="text" placeholder="Message"/>
-                      <button className="contact-button">Send</button>
-                          </form>
+
+                      
+                      </form>
+                        <button className="contact-button">Send</button>
                         </div>
                     </div>
                 <div className="map-inner">

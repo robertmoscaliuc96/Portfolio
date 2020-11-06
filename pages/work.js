@@ -62,7 +62,7 @@ const Work = () =>(
                             <div className="card-img3"/>
                                 <h1 className="card-title">Freelancing</h1>
                                 <div className="card-description">
-                                <p className="card-description">Showcase website that its role is to present services, information about a company and a contact form that send messages to the company staff.</p>
+                                <p className="card-description">Showcase website with the role to is to present services, information about a company and a contact form that sends messages to the company staff.</p>
                                 <div className="card-tech">
                                     <p className="card-technologies">React</p>
                                     <p className="card-technologies">Next.js</p>

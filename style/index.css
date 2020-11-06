@@ -372,12 +372,12 @@
 /* About */
 .skill-inner{
   margin: auto;
-  padding: 20rem 10rem;
+  padding: 15rem 10rem;
   display: grid;
   grid-template-columns: 3fr 2fr;
-  grid-gap:1rem;
+  grid-gap:3rem;
   animation: para 2s 1;
-  line-height: 4rem;
+  line-height: 3rem;
   
 }
 
@@ -389,12 +389,12 @@
 }
 .language h3 {
   color: var(--dif-color);
-  font-size: calc(20px + 1vw);
+  font-size: calc(15px + 1vw);
   padding: 10px 0;
 }
 .language p{
   color: var(--text-color);
-  font-size: calc(14px + 1vw);
+  font-size: calc(10px + 1vw);
   font-weight: 300;
 }
 
@@ -402,18 +402,18 @@
   display: grid;
   grid-template-columns: repeat(2,1fr);
 
+
 }
 .skills-info{
   justify-content: center;
   align-items: center;
-  font-size: calc(9px + 1vw);
-  line-height: 4.7rem;
+  font-size: calc(10px + 1vw);
+
 }
 .skills-info p{
-  font-size: calc(14px + 1vw);
+  font-size: calc(10px + 1vw);
   color: var(--text-color);
-  padding: 2.8rem 0;
-  text-align: center;
+  line-height: 8rem;
 }
 .img-about{
   width:calc(60px + 3vw);
@@ -454,7 +454,7 @@
   display: grid;
   grid-template-columns: repeat(2,1fr);
   transition-duration: 300ms;
-  gap: 10rem;
+  gap: 5rem;
   animation: para 2s 1;
   -webkit-animation: para 3s 1;
   
@@ -462,7 +462,6 @@
 .about-text{
   margin-top: 20%;
   margin-left: 20%;
-  margin-top: 20%;
   color: var(--text-color);
 }
 .map-inner{
@@ -525,7 +524,7 @@
   animation: para 2s 1;
   -webkit-animation: para 3s 1;
 }
-textarea{
+.textarea{
   margin: 1rem 1rem;
   width: 100%;
   height: 8rem;
@@ -533,8 +532,8 @@ textarea{
   resize: none;
 }
 .contact-button{
-  margin-left: 70%;
   margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 /* Animation */
@@ -684,6 +683,7 @@ textarea{
 @media (min-width: 1024px) and (max-width:1500px){
     .home-text{
       margin-bottom: 10%;
+      overflow-x: auto;
     }
 }
 
@@ -917,6 +917,9 @@ textarea{
   }
   .skills-info{
     line-height: 1.1rem;
+  }
+  .contact-button{
+    margin-left: 1rem;
   }
 
 }
