@@ -183,7 +183,7 @@
     
 }
 .home-text{
-  padding: 30rem 10rem;
+  padding: 22rem 10rem;
   color: var(--text-color);
   width: 80%;
   transition-duration: 300ms;
@@ -475,9 +475,9 @@
   color: var(--text-color);
   font-size: 1.2rem;
   padding: 1rem;
-  background: url('../public/marker.png') no-repeat center bottom/cover;
-  width: calc(23rem + 1vw);
-  height: calc(12rem + 1vw);
+  background-color: var(--light-dark);
+  width: calc(22rem + 1vw);
+  height: calc(10rem + 1vw);
   
 
 
@@ -732,9 +732,7 @@
     grid-template-columns: repeat(1,1fr);
 
   }
-  .card{
 
-  }
   .card-title{
     font-size: 1.3rem;
     margin: 1rem;
