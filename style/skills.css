@@ -50,7 +50,7 @@
   .skills-info p{
     font-size: calc(10px + 1vw);
     color: var(--text-color);
-    line-height: 6rem;
+    line-height: 8rem;
   }
   .img-about{
     width:calc(60px + 3vw);
