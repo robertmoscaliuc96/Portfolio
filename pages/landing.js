@@ -1,6 +1,6 @@
-import Navbar from '../components/layout/Navbar'
-import Link from "next/link"
-import HeadInner from '../components/layout/Head'
+import Navbar from '../components/layout/Navbar';
+import Link from "next/link";
+import HeadInner from '../components/layout/Head';
 
 const Landing = () =>(
     <div className="homepage">

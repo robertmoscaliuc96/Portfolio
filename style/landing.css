@@ -5,7 +5,7 @@
     height: 100vh;
     margin: auto;
     overflow-x: unset;
-    }
+}
   
 
 .home-inner{
@@ -47,19 +47,23 @@
 
 .button-div{
   padding: 1.5rem 0rem;
+
 }
 .work-button, .contact-button{
   align-items: center;
   font-size: 1.5rem;
   font-weight: 500;
   background-color: transparent;
-  color: var(--diff-color);
+  color: var(--dif-color);
   padding: 0.4rem 2rem;
   border: 2px solid var(--dif-color);
   cursor: pointer;
   animation: para 2s 1;
   -webkit-animation: para 3s 1;
   transition-duration: 500ms;
+}
+.work-button{
+  
 }
 
 .work-button, .contact-button:hover{
@@ -91,6 +95,10 @@
       overflow-x: auto;
     }
 }
+
+
+
+
 
 @media (max-width: 1024px){
   .work-inner,
@@ -130,6 +138,7 @@
 }
 
 
+
 @media (max-width: 768px){
 .home-image{
     overflow-x: auto;
@@ -137,7 +146,6 @@
 .home-inner{
     display: grid;
     grid-template-columns: repeat(1,1fr);
-
   }
 
 .home-text{
