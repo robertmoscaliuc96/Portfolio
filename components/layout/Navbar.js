@@ -2,10 +2,9 @@
 import Burger from './Burger'
 
 const Navbar = () =>(
-    <nav className="navbar">
+    <nav className="navbar-class">
         <Burger/>
 
 </nav>
 )
-console.log("hello there");
 export default Navbar;

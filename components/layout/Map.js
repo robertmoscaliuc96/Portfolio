@@ -10,7 +10,6 @@ class Map extends Component {
       latitude: 53.475433,
       longitude: -2.236497,
       zoom: 13,
-      
     }
   };
 

@@ -1,0 +1,125 @@
+
+.about-image{
+    background: url('../public/background5.png') no-repeat center top/cover;
+    width: 100%;
+    height: 100vh;
+  }
+
+
+/* About */
+.about-inner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    transition-duration: 300ms;
+    gap: 5rem;
+    animation: para 2s 1;
+    -webkit-animation: para 3s 1;
+    
+  }
+  .about-text{
+    margin-top: 20%;
+    margin-left: 20%;
+    color: var(--text-color);
+  }
+  .map-inner{
+    height: 100vh;
+    background-color: white;
+  }
+  
+  .paragraph-about{
+    font-weight: 300;
+    line-height: 2rem;
+    word-spacing: 5px;
+    animation: para 2s 1;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+  
+  
+  }
+  .about-text h3{
+    color: var(--dif-color);
+  }
+  .large-about{
+    color:var(--dif-color);
+    padding-bottom: 2rem;
+    margin-left: 1rem;
+  }
+  
+  
+  .marker-box{
+    color: var(--text-color);
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: var(--light-dark);
+    width: calc(22rem + 1vw);
+    height: calc(12rem + 1vw);
+    border-radius: 12px;
+  }
+  
+  .marker-name {
+    display: flex;
+    padding-top: 1rem;
+    letter-spacing: 1.5px;
+  }
+  .marker-name i{
+    color: var(--dif-color);
+    font-size: 1.5rem;
+  }
+  
+  .contact-form input, textarea {
+    border: none;
+    background-color: var(--dark);
+    border-bottom: 2px solid var(--dif-color);
+    color: var(--dif-color);
+    margin: 1rem 1rem;
+    width: 100%;
+    height: 4rem;
+    font-size: 1.6rem;
+    padding-left: 0.6rem;
+    padding-top: 0.2rem;
+    transition-duration: 300ms;
+    animation: para 2s 1;
+    -webkit-animation: para 3s 1;
+  }
+  .textarea{
+    margin: 1rem 1rem;
+    width: 100%;
+    height: 8rem;
+    font-size: 1.6rem;
+    resize: none;
+  }
+  .contact-button{
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  
+
+  
+@media (max-width: 768px){
+
+    .about-inner{
+      grid-template-columns: repeat(1,1fr);
+      overflow-x: auto;
+    }
+  
+    .about-inner{
+      line-height: 2.5rem;
+    }
+  
+
+    .skills-info{
+      line-height: 1.1rem;
+    }
+    .contact-button{
+      margin-left: 1rem;
+    }
+  
+  }
+  @media (min-width: 480px){
+  
+    .skills-info{
+      line-height: 1rem;
+    }
+    
+  }
+  

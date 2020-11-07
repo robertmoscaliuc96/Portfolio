@@ -14,9 +14,6 @@ const StyledBurger = styled.div`
   cursor: pointer;
   
 
-
-
-
   @media (max-width: 960px) {
     display: flex;
     justify-content: space-around;
@@ -26,7 +23,7 @@ const StyledBurger = styled.div`
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }) => open ? '#fff' : '#fff'};
+    background-color: ${({ open }) => open ? '#62CBE7' : '#fff'};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
@@ -48,7 +45,8 @@ const StyledBurger = styled.div`
 
 const Burger = () => {
   const [open, setOpen] = useState(false)
-  
+
+  if(true){
   return (
     <>
       <StyledBurger className="burger" open={open} onClick={() => setOpen(!open)}>
@@ -59,6 +57,9 @@ const Burger = () => {
       <RightNav open={open}/>
     </>
   )
+  }
+  
+
 }
 
-export default Burger
+export default Burger;

@@ -1,12 +1,14 @@
-import { config, library } from '@fortawesome/fontawesome-svg-core';
-import '@fortawesome/fontawesome-svg-core/styles.css';
-
+import { config} from '@fortawesome/fontawesome-svg-core';
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import * as gtag from '../lib/gtag'
 
-
 import '../style/index.css'
+import '../style/navbar.css'
+import '../style/landing.css'
+import '../style/about.css'
+import '../style/skills.css'
+import '../style/work.css'
 config.autoAddCss = false;
 
 const App = ({ Component, pageProps }) => {
@@ -21,7 +23,7 @@ const App = ({ Component, pageProps }) => {
     }
   }, [router.events])
 
-  return <Component {...pageProps} />
+  return (<Component {...pageProps} />)
 }
 
 export default App

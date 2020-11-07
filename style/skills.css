@@ -1,0 +1,134 @@
+
+/* Skills */
+.skill-image{
+    background: url('../public/background5.png') no-repeat center top/cover;
+    width: 100%;
+    height: 100vh;
+    }
+  
+
+.skill-inner{
+    margin: auto;
+    padding: 15rem 10rem;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-gap:3rem;
+    animation: para 2s 1;
+    line-height: 3rem;
+    
+  }
+  
+  .language h1{
+    color: var(--text-color);
+    font-size: calc(25px + 3vw);
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  .language h3 {
+    color: var(--dif-color);
+    font-size: calc(15px + 1vw);
+    padding: 10px 0;
+  }
+  .language p{
+    color: var(--text-color);
+    font-size: calc(10px + 1vw);
+    font-weight: 300;
+  }
+  
+  .skills{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  
+  
+  }
+  .skills-info{
+    justify-content: center;
+    align-items: center;
+    font-size: calc(10px + 1vw);
+  
+  }
+  .skills-info p{
+    font-size: calc(10px + 1vw);
+    color: var(--text-color);
+    line-height: 8rem;
+  }
+  .img-about{
+    width:calc(60px + 3vw);
+    transition-duration: 300ms;
+  }
+  
+  .skill-icon{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    justify-content: right;
+    align-items: right;
+    transition-duration: 400ms;
+  }
+  
+  .skill-icon:nth-child(2){
+    transition-duration: 1000ms;
+  }
+  .skill-icon:nth-child(4){
+    transition-duration: 1000ms;
+  }
+  
+  .img-about:nth-child(1):hover{
+    transform: rotate(61deg)
+  }
+  .img-about:nth-child(2):hover{
+    transform: rotate(-360deg)
+  }
+  .img-about:nth-child(3):hover{
+    transform: rotate(90deg)
+  }
+  .img-about:nth-child(4):hover{
+    transform: rotate(-360deg)
+  }
+  
+
+
+
+
+
+@media (min-width: 1600px){
+
+}
+
+@media (min-width: 1024px) and (max-width:1500px){
+
+}
+
+@media (max-width: 1024px){
+  .skill-inner{
+    background: url('../public/backgroundResponsive.png') no-repeat center bottom/cover;
+  }
+
+  .skill-inner{
+    grid-template-columns: repeat(1,1fr);
+    padding: 10rem 5rem;
+    gap: 10rem;
+    line-height: 2.2rem;
+  }
+  .skill-image{
+   height: auto;
+  }
+
+
+}
+
+
+@media (max-width: 768px){
+
+  .skills-info{
+    line-height: 1.1rem;
+  }
+
+
+}
+@media (min-width: 480px){
+
+  .skills-info{
+    line-height: 1rem;
+  }
+  
+}
