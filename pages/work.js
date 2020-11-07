@@ -2,7 +2,6 @@ import Navbar from '../components/layout/Navbar'
 import HeadInner from '../components/layout/Head'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub,faChrome} from '@fortawesome/free-brands-svg-icons'
 
 library.add(faGithub, faChrome)
@@ -27,8 +26,8 @@ const Work = () =>(
 
 
                                 <div className="card-link">
-                                    <a href="https://github.com/robertmoscaliuc96/FQA-Website"><FontAwesomeIcon icon={faGithub} /></a>
-                                    <a href="https://floating-ocean-48991.herokuapp.com/posts"><FontAwesomeIcon icon={faChrome} /></a>
+                                    <a href="https://github.com/robertmoscaliuc96/FQA-Website"><i className="fab fa-github"></i></a>
+                                    <a href="https://floating-ocean-48991.herokuapp.com/posts"><i className="fab fa-chrome"></i></a>
                                 </div>
 
                                 </div>
@@ -49,8 +48,8 @@ const Work = () =>(
                                 </div>
 
                                 <div className="card-link">
-                                    <a href="https://github.com/robertmoscaliuc96/GitHub-Finder.git"><FontAwesomeIcon icon={faGithub} /></a>
-                                    <a href="https://happy-noyce-52ce35.netlify.app/"><FontAwesomeIcon icon={faChrome} /></a>
+                                    <a href="https://github.com/robertmoscaliuc96/GitHub-Finder.git"><i className="fab fa-github"></i></a>
+                                    <a href="https://happy-noyce-52ce35.netlify.app/"><i className="fab fa-chrome"></i></a>
                                 </div>
 
                                 </div>
@@ -72,7 +71,7 @@ const Work = () =>(
 
 
                                 <div className="card-link">
-                                    <a  href="https://calm-ridge-27757.herokuapp.com/"><FontAwesomeIcon icon={faChrome} /></a>
+                                    <a  href="https://calm-ridge-27757.herokuapp.com/"><i className="fab fa-chrome"></i></a>
                                 </div>
 
                                 </div>

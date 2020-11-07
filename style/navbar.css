@@ -1,6 +1,6 @@
 /* NavBar */
 
-.navbar {
+.navbar, .navbar-class {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -11,6 +11,7 @@
     animation: para 2s 1;
     
   }
+
   
   .nav-list{
     justify-content: center;

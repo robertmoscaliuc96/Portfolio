@@ -62,11 +62,9 @@
   -webkit-animation: para 3s 1;
   transition-duration: 500ms;
 }
-.work-button{
-  
-}
 
-.work-button, .contact-button:hover{
+.work-button:hover, 
+.contact-button:hover{
   background-color: var(--dif-color);
   color: var(--dif-color2);
 }

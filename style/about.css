@@ -51,8 +51,8 @@
     font-size: 1.2rem;
     padding: 1rem;
     background-color: var(--light-dark);
-    width: calc(22rem + 1vw);
-    height: calc(12rem + 1vw);
+    width: calc(23rem + 1vw);
+    height: calc(11rem + 1vw);
     border-radius: 12px;
   }
   
@@ -73,7 +73,7 @@
     color: var(--dif-color);
     margin: 1rem 1rem;
     width: 100%;
-    height: 4rem;
+    height: 3rem;
     font-size: 1.6rem;
     padding-left: 0.6rem;
     padding-top: 0.2rem;
@@ -81,7 +81,7 @@
     animation: para 2s 1;
     -webkit-animation: para 3s 1;
   }
-  .textarea{
+  .contact-form textarea{
     margin: 1rem 1rem;
     width: 100%;
     height: 8rem;
@@ -99,13 +99,33 @@
 
     .about-inner{
       grid-template-columns: repeat(1,1fr);
-      overflow-x: auto;
+      overflow-x: scroll;
+    }
+    .map-inner{
+      display: none;
+    }
+    .about-text{
+      margin: 30% 5%;
+    }
+    .large-about{
+      font-size: 3.2rem;
+    }
+    .paragraph-about{
+      font-size: 1.3rem;
     }
   
     .about-inner{
       line-height: 2.5rem;
     }
-  
+    .map-inner{
+      width: 5rem;
+    }  
+    .contact-form input, textarea {
+      width: 90%;
+    }
+    .contact-form textarea {
+      width: 90%;
+    }
 
     .skills-info{
       line-height: 1.1rem;

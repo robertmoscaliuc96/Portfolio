@@ -87,7 +87,8 @@
   
   .card-description p{
     font-size: 1rem;
-    padding: .5rem 1.7rem;
+    padding: .5rem 1.8rem;
+    word-spacing: 4px;
     color: var(--text-color);
   }
   
