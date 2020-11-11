@@ -26,13 +26,17 @@
     font-size: 1.7rem;
     color: var(--light-dark);
     transition-duration: 500ms;
+    cursor: pointer;
+  }
+  .nav-item:hover{
+    color: var(--dif-color);
   }
 
 
   
-  .nav-item:hover{
-    color:var(--dif-color);
-  }
+ .active{
+   color:var(--dif-color);
+ }
   
   .nav-social{
     display: flex;
@@ -111,6 +115,9 @@
     transform-origin: 1px;
     transition: all 0.3s linear;
   }
+  .active{
+    color:var(--dif-color);
+  }
 
 }
 
@@ -140,6 +147,9 @@
   .nav-item{
     font-size: 1.5rem;
 
+  }
+  .active{
+    color:var(--dif-color);
   }
   .nav-social{
     font-size: 1rem;

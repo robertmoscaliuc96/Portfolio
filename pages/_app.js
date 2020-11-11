@@ -1,5 +1,5 @@
 import { config} from '@fortawesome/fontawesome-svg-core';
-import { useEffect } from 'react'
+import { useEffect,useState } from 'react'
 import { useRouter } from 'next/router'
 import * as gtag from '../lib/gtag'
 
@@ -23,6 +23,8 @@ const App = ({ Component, pageProps }) => {
       router.events.off('routeChangeComplete', handleRouteChange)
     }
   }, [router.events])
+
+  const [active, setActive] = useState(1);
 
   return (<Component {...pageProps} />)
 }
