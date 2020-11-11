@@ -27,6 +27,8 @@
     color: var(--light-dark);
     transition-duration: 500ms;
   }
+
+
   
   .nav-item:hover{
     color:var(--dif-color);
