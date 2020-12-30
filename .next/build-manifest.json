@@ -38,11 +38,6 @@
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/skills.js"
-    ],
-    "/work": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/work.js"
     ]
   },
   "ampFirstPages": []
