@@ -9,9 +9,9 @@
 /* About */
 .about-inner{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 2fr 1fr;
     transition-duration: 300ms;
-    gap: 5rem;
+    gap: 6rem;
     animation: para 2s 1;
     -webkit-animation: para 3s 1;
     

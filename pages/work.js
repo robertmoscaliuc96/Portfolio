@@ -13,6 +13,29 @@ const Work = () =>(
                 <div className="work-inner">
                     <div className="card">
                         <div className="card-header">
+                            <div className="card-img4"/>
+                                <h1 className="card-title">Cook At Home</h1>
+                                <div className="card-description">
+                                <p className="card-description">Full-stack application using MERN stack where users share their recipes and find other recipes ideas using Edamame API.</p>
+                                <div className="card-tech">
+                                    <p className="card-technologies">React</p>
+                                    <p className="card-technologies">NodeJS</p>
+                                    <p className="card-technologies">MongoDB</p>
+                                    <p className="card-technologies">Redux</p>
+                                </div>
+
+
+                                <div className="card-link">
+                                    <a href="https://github.com/robertmoscaliuc96/Recipefy"><i className="fab fa-github"></i></a>
+                                    <a href="https://cook-at-homerecipefy.herokuapp.com/login"><i className="fab fa-chrome"></i></a>
+                                </div>
+
+                                </div>
+
+                        </div>
+                    </div>
+                    <div className="card">
+                        <div className="card-header">
                             <div className="card-img"/>
                                 <h1 className="card-title">Developers FAQ</h1>
                                 <div className="card-description">
@@ -27,7 +50,7 @@ const Work = () =>(
 
                                 <div className="card-link">
                                     <a href="https://github.com/robertmoscaliuc96/FQA-Website"><i className="fab fa-github"></i></a>
-                                    <a href="https://floating-ocean-48991.herokuapp.com/posts"><i className="fab fa-chrome"></i></a>
+                                    <a href="https://floating-ocean-48991.herokuapp.com"><i className="fab fa-chrome"></i></a>
                                 </div>
 
                                 </div>
