@@ -10,7 +10,9 @@ const Work = () =>(
       <div>
         <HeadInner/>
         <Navbar/>
-                <div className="work-inner">
+                <div className="work-container">
+                    <h1 className="work-title large-name"> Porjects</h1>
+                    <div className="work-inner">
                     <div className="card">
                         <div className="card-header">
                             <div className="card-img4"/>
@@ -103,6 +105,7 @@ const Work = () =>(
                     </div>
                    
 
+                </div>
                 </div>
     </div>
     );

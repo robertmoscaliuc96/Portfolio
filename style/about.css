@@ -11,14 +11,13 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     transition-duration: 300ms;
-    gap: 6rem;
     animation: para 2s 1;
     -webkit-animation: para 3s 1;
     
   }
   .about-text{
-    margin-top: 20%;
-    margin-left: 20%;
+    margin-top: 15rem;
+    padding-left: 10rem;
     color: var(--text-color);
   }
   .map-inner{
@@ -48,14 +47,15 @@
   
   .marker-box{
     color: var(--text-color);
-    font-size: 1.2rem;
-    padding: 1rem;
+    font-size: 1rem;
+    padding-left: 20px;
+    padding-bottom: 14px;
     background-color: var(--light-dark);
-    width: calc(23rem + 1vw);
-    height: calc(11rem + 1vw);
-    border-radius: 12px;
+    width: 330px;
+    border-bottom-right-radius: 18px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
   }
-  
   .marker-name {
     display: flex;
     padding-top: 1rem;
@@ -65,7 +65,10 @@
     color: var(--dif-color);
     font-size: 1.5rem;
   }
-  
+  .contact-form{
+    margin-top: 5%;
+  }
+
   .contact-form input, textarea {
     border: none;
     background-color: var(--dark);

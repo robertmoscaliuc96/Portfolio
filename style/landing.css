@@ -9,13 +9,13 @@
   
 
 .home-inner{
-    display:flex;
-    flex-flow: row nowrap;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
     line-height: 3rem;
     
 }
 .home-text{
-  padding: 20rem 10rem;
+  padding: 15rem 10rem;
   color: var(--text-color);
   width: 80%;
   transition-duration: 300ms;
@@ -23,7 +23,7 @@
   -webkit-animation: para 2s 1;
 }
 .paragraph{
-  font-weight: 100;
+  font-weight: 300;
   line-height: 2rem;
   word-spacing: 5px;
   animation: para 2s 1;
@@ -41,7 +41,19 @@
   transition-duration: 1000ms;
   
 }
+
+.big-logo{
+  position: relative;
+  top: 5%;
+  right: 15%;
+  width: 100%;
+  cursor: pointer;
+}
 .large-logo:hover{
+  transform: rotate(31deg)
+}
+
+.large-logo-test:hover{
   transform: rotate(31deg)
 }
 

@@ -13,6 +13,7 @@ const About = () =>(
                     <h1 className="large-about">Contact me</h1>
                     <p className="paragraph-about">I am interested in any entry-level opportunities.</p>
                     <a href="mailto:robertmoscaliuc96@gmail.com" className="contact-button">Send Email</a>
+                    
                 <div className="contact-form">
                     <form className="form" action="">
                         <a className="contact-button" href="/cv.pdf" download>Download CV</a>

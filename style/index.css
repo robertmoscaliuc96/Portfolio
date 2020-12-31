@@ -37,11 +37,27 @@
   img {
     width: 100%;
   }
+  /* FONT-SIZE SCHEME
+
+  font-size1: calc(25px + 3vw);
+  font-size2: calc(25px + 3vw);
+  font-size3: calc(25px + 3vw);
+
+  font-weight1: 150;
+  font-weight2: 150;
+  font-weight3: 150;
+
+  margin-top1: ;
+  margin-left: ;
+  */
+
+
+
 
 
 /* Utilities */
 .large, .large-name, .large-skill, .large-about{
-  font-size: calc(22px + 3vw);
+  font-size: calc(25px + 3vw);
   font-weight: bold;
   line-height: 1;
   margin-bottom: 1rem;

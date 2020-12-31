@@ -1,30 +1,72 @@
 import Navbar from '../components/layout/Navbar';
 import Link from "next/link";
 import HeadInner from '../components/layout/Head';
+import {useSpring, animated} from 'react-spring'
 
-const Landing = () =>(
-    <div className="homepage">
-        <HeadInner/>
-        <Navbar/>
-            <div className="home-image">
-                    <div className="home-inner">
-                        <div className="home-text">
-                            <p className="large">Hi,</p>
-                            <p className="large-name">I'm Robert,</p>
-                            <p className="large-name">web developer.</p>
-                            <p className="paragraph">I'm an enthusiastic software developer, that covers the full-stack development of a website and aims to build responsive and engaging products.</p>
-                            <div className="button-div">
-                                <Link href="/work"><button className="work-button">My Work</button></Link>
-                            </div>
-                            
+
+const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.05]
+
+const trans = (x, y, s) => `perspective(1800px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+
+
+function Landing (){
+    const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
+
+    const spring = useSpring({
+        from: {
+          transform: 'rotateZ(0deg)',
+          opacity: 0
+        },
+
+        to: {
+          transform: 'rotateZ(-31deg)',
+          opacity:1
+        },
+        config: {
+          mass: 1.5,
+          tension: 50,
+          friction: 8,
+
+        }
+      });
+
+        return (
+            <div className="homepage">
+                <HeadInner/>
+                <Navbar/>
+                    <div className="home-image">
+                            <div className="home-inner">
+                                <div className="home-text">
+                                    <p className="large">Hi,</p>
+                                    <p className="large-name">I'm Robert,</p>
+                                    <p className="large-name">web developer.</p>
+                                    <p className="paragraph">I'm an enthusiastic software developer, that covers the full-stack development of a website and aims to build responsive and engaging products.</p>
+                                    <div className="button-div">
+                                        <Link href="/work"><button className="work-button">My Work</button></Link>
+                                    </div>
+                                    
+                                </div>
+                                <animated.div
+                                    style={spring}
+>
+                                            <animated.div                                         class="large-logo-test"
+
+                                            onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+                                            onMouseLeave={() => set({ xys: [0, 0, 1] })}
+                                            style={{ transform: props.xys.interpolate(trans) }} >
+                                                <img src="/RLogo.png" alt=".robert"  className="big-logo"/>
+
+                                            </animated.div>
+                                        </animated.div>
+
+                            </div>    
                         </div>
-                        <div className="large-logo">
-                            <img src="/30logo1.png" alt=".robert"  className="big-logo"/>
-                        </div>
-                    </div>    
-                </div>
-            </div>
-);
+                    </div>
+        
+        )
+
+}
+
 
 
 export default Landing;

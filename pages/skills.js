@@ -13,9 +13,9 @@ const Skills = () =>(
                         <h3>Programming language</h3>
                         <p> JavaScript, HTML5, CSS3, Java, Python</p>
                         <h3>Libraries / Framework</h3>
-                        <p> React, NodeJS, Express, Bootstrap, JWT, Next.js, Redux </p>
+                        <p> React, NodeJS, Express, MongoDB, SQLite, Bootstrap, JWT, Next.js, Redux, React-Spring </p>
                         <h3>Others</h3>
-                        <p>MongoDB, SQLite, Git, Heroku, Netlify, Postman, Adobe Illustrator, Figma, terminal </p>
+                        <p> Git, Heroku, Netlify, Postman, Adobe Illustrator, Figma, terminal </p>
                     </div>
                     <div className="skills">
                         <div className="skills-info">
