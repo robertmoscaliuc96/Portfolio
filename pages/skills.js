@@ -18,17 +18,39 @@ const Skills = () =>(
                         <p> Git, Heroku, Netlify, Postman, Adobe Illustrator, Figma, terminal </p>
                     </div>
                     <div className="skills">
-                        <div className="skills-info">
-                            <p>Backend integration</p>
-                            <p>Debugging</p>
-                            <p>Responsive Design</p>
-                            <p>Api integration</p>
+                        <div className="skill-group">
+                            <div className="skill-icon">
+                                <img src="/backend.png" alt="my image" className="img-about"/>
+                            </div>
+                            <div className="skills-info">
+                                <p>Backend integration</p>
+
                         </div>
-                        <div className="skill-icon">
-                            <img src="/backend.png" alt="my image" className="img-about"/>
-                            <img src="/bug.png" alt="my image" className="img-about"/>
-                            <img src="/responsive.png" alt="my image" className="img-about"/>
-                            <img src="/api.png" alt="my image" className="img-about"/>
+                        </div>
+                        <div className="skill-group">
+                            <div className="skill-icon">
+                                <img src="/bug.png" alt="my image" className="img-about"/>
+                            </div>
+                            <div className="skills-info">
+                                <p>Debugging</p>
+                        </div>
+                        </div>
+                        <div className="skill-group">
+                            <div className="skill-icon">
+                                <img src="/responsive.png" alt="my image" className="img-about"/>
+                            </div>
+                            <div className="skills-info">
+                                <p>Responsive Design</p>
+
+                        </div>
+                        </div>
+                        <div className="skill-group">
+                            <div className="skill-icon">
+                                <img src="/api.png" alt="my image" className="img-about"/>
+                            </div>
+                            <div className="skills-info">
+                                <p>Api integration</p>
+                        </div>
                         </div>
 
                     </div>

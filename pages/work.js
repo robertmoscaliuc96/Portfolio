@@ -1,17 +1,47 @@
 import Navbar from '../components/layout/Navbar'
 import HeadInner from '../components/layout/Head'
+import {useState} from 'react'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faGithub,faChrome} from '@fortawesome/free-brands-svg-icons'
 
+import {useTransition,useSpring, animated} from 'react-spring'
+
+
+
 library.add(faGithub, faChrome)
 
-const Work = () =>(  
-      <div>
+
+function Work(){
+    const [items, set] = useState(["Projects."])
+
+    const textAnimation = useSpring({
+        from: {
+        transform: 'translateX(-70)',
+         opacity: 0,
+         height: 0,
+
+
+        },
+        delay: 1100,
+        to: {
+          opacity:1,
+          height: "auto",
+          transform: 'translateX(0)'
+        },
+        config: {
+          mass: 1,
+          tension: 250,
+          friction: 200
+        }
+      });
+
+
+    return(<div>
         <HeadInner/>
         <Navbar/>
                 <div className="work-container">
-                    <h1 className="work-title large-name"> Porjects</h1>
+                    <animated.div style={textAnimation} className="work-title large-name">{items}</animated.div>
                     <div className="work-inner">
                     <div className="card">
                         <div className="card-header">
@@ -25,15 +55,15 @@ const Work = () =>(
                                     <p className="card-technologies">MongoDB</p>
                                     <p className="card-technologies">Redux</p>
                                 </div>
-
-
+    
+    
                                 <div className="card-link">
                                     <a href="https://github.com/robertmoscaliuc96/Recipefy"><i className="fab fa-github"></i></a>
                                     <a href="https://cook-at-homerecipefy.herokuapp.com/login"><i className="fab fa-chrome"></i></a>
                                 </div>
-
+    
                                 </div>
-
+    
                         </div>
                     </div>
                     <div className="card">
@@ -48,15 +78,15 @@ const Work = () =>(
                                     <p className="card-technologies">MongoDB</p>
                                     <p className="card-technologies">Redux</p>
                                 </div>
-
-
+    
+    
                                 <div className="card-link">
                                     <a href="https://github.com/robertmoscaliuc96/FQA-Website"><i className="fab fa-github"></i></a>
                                     <a href="https://floating-ocean-48991.herokuapp.com"><i className="fab fa-chrome"></i></a>
                                 </div>
-
+    
                                 </div>
-
+    
                         </div>
                     </div>
                     <div className="card">
@@ -71,14 +101,14 @@ const Work = () =>(
                                     <p className="card-technologies">Bootstrap</p>
                                     
                                 </div>
-
+    
                                 <div className="card-link">
                                     <a href="https://github.com/robertmoscaliuc96/GitHub-Finder.git"><i className="fab fa-github"></i></a>
                                     <a href="https://happy-noyce-52ce35.netlify.app/"><i className="fab fa-chrome"></i></a>
                                 </div>
-
+    
                                 </div>
-
+    
                         </div>
                     </div>
                     <div className="card">
@@ -93,21 +123,24 @@ const Work = () =>(
                                     <p className="card-technologies">NodeJS</p>
                                     
                                 </div>
-
-
+    
+    
                                 <div className="card-link">
                                     <a  href="https://calm-ridge-27757.herokuapp.com/"><i className="fab fa-chrome"></i></a>
                                 </div>
-
+    
                                 </div>
-
+    
                         </div>
                     </div>
                    
-
+    
                 </div>
                 </div>
     </div>
-    );
+    )
+}  
+
+
 
 export default Work;

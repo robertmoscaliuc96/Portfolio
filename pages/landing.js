@@ -10,22 +10,26 @@ const trans = (x, y, s) => `perspective(1800px) rotateX(${x}deg) rotateY(${y}deg
 
 
 function Landing (){
-    const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
+    const [props, set] = useSpring(() => ({xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
 
     const spring = useSpring({
         from: {
-          transform: 'rotateZ(0deg)',
-          opacity: 0
+          opacity: 0,
+          transform: 'rotateZ(0deg)'
+
         },
+        delay: 700,
 
         to: {
+          opacity:0.9,
           transform: 'rotateZ(-31deg)',
-          opacity:1
         },
         config: {
           mass: 1.5,
           tension: 50,
           friction: 8,
+          
+
 
         }
       });

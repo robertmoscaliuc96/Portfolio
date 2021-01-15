@@ -9,20 +9,23 @@
 
 .skill-inner{
     margin: auto;
-    padding: 15rem 10rem;
+    margin-left: 10rem;
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-gap:3rem;
     animation: para 2s 1;
-    line-height: 3rem;
+
     
+  }
+  .language{
+    padding-top: 15rem;
   }
   
   .language h1{
     color: var(--text-color);
     font-size: calc(25px + 3vw);
     font-weight: bold;
-    margin-bottom: 2rem;
+
   }
   .language h3 {
     color: var(--dif-color);
@@ -33,24 +36,32 @@
     color: var(--text-color);
     font-size: calc(10px + 1vw);
     font-weight: 300;
+
   }
   
   .skills{
+    margin-top: 15rem;
+
+  }
+  .skill-group{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-  
-  
+    grid-template-columns: 1fr 3fr;
   }
   .skills-info{
     justify-content: center;
     align-items: center;
-    font-size: calc(10px + 1vw);
+    font-size: calc(15px + 1vw);
+    
   
   }
   .skills-info p{
     font-size: calc(10px + 1vw);
     color: var(--text-color);
-    line-height: 8rem;
+    text-align: center;
+    line-height: 7rem;
+    margin-bottom: 2.2rem;
+    
+
   }
   .img-about{
     width:calc(60px + 3vw);
@@ -59,9 +70,9 @@
   
   .skill-icon{
     display: grid;
-    grid-template-rows: repeat(4,1fr);
-    justify-content: right;
-    align-items: right;
+    grid-template-rows: repeat(1fr, );
+    position: relative;
+    left: 1rem;
     transition-duration: 400ms;
   }
   

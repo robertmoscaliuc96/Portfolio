@@ -83,7 +83,7 @@ const RightNav = ({ open }) => {
     <HeadInner/>
 
         <div className="navbar">
-
+        
           <div className="logo-navbar">
           <Link href='/'><img src="/robertlogo.png" alt=".robert" className="robert-logo"/></Link>
 

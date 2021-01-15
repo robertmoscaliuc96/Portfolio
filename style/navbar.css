@@ -1,6 +1,6 @@
 /* NavBar */
 
-.navbar, .navbar-class {
+.navbar {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -9,8 +9,8 @@
     height: 100%;
     background-color: var(--dark-color);
     animation: para 2s 1;
-    
   }
+
 
   
   .nav-list{
@@ -31,13 +31,24 @@
   .nav-item:hover{
     color: var(--dif-color);
   }
+  .robert-logo{
+    width: 3.5rem;
+    height: auto;
+    padding: 8px;
+    padding-bottom: 13px;
+    background-color: #1B1E22;
+    cursor: pointer;
+    position: relative;
+    bottom: 1%;
+  }
+  
 
 
   
  .active{
    color:var(--dif-color);
  }
-  
+
   .nav-social{
     display: flex;
     flex-flow: column nowrap;
