@@ -27,7 +27,8 @@ const Ul = styled.ul`
       position: relative;
       justify-content:center;
       align-items:center;
-      x-index: 1;
+
+      
       
       }
       .robert-logo{

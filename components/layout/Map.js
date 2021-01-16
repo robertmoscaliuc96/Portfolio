@@ -32,7 +32,7 @@ class Map extends Component {
                 <div className="marker-name">
                 <i className="far fa-envelope"></i>&nbsp;
                 
-                    <p className="marker-text">: robertmoscaliuc96gmail.com</p>
+                    <p className="marker-text"> : Robertmoscaliuc96gmail.com</p>
                 </div>
                 <div className="marker-name">
                     <i className="fas fa-phone-alt"></i>

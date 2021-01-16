@@ -41,7 +41,7 @@ function Work(){
         <HeadInner/>
         <Navbar/>
                 <div className="work-container">
-                    <animated.div style={textAnimation} className="work-title large-name">{items}</animated.div>
+                    <h1 className="work-title">Projects.</h1>
                     <div className="work-inner">
                     <div className="card">
                         <div className="card-header">
@@ -135,8 +135,10 @@ function Work(){
                     </div>
                    
     
+
+                    </div>
                 </div>
-                </div>
+
     </div>
     )
 }  

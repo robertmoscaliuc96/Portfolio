@@ -58,19 +58,21 @@
     font-size: calc(10px + 1vw);
     color: var(--text-color);
     text-align: center;
-    line-height: 7rem;
-    margin-bottom: 2.2rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4vw;
+    margin-top: 3rem;
     
 
   }
   .img-about{
-    width:calc(60px + 3vw);
+    width:calc(40px + 3vw);
     transition-duration: 300ms;
   }
   
   .skill-icon{
     display: grid;
-    grid-template-rows: repeat(1fr, );
+    grid-template-rows: repeat(1fr);
     position: relative;
     left: 1rem;
     transition-duration: 400ms;
@@ -98,36 +100,28 @@
   
 
 
-
-
-
-@media (min-width: 1600px){
-
-}
-
-@media (min-width: 1024px) and (max-width:1500px){
-
-}
-
 @media (max-width: 1024px){
-  .skill-inner{
-    background: url('../public/backgroundResponsive.png') no-repeat center bottom/cover;
-  }
 
   .skill-inner{
     grid-template-columns: repeat(1,1fr);
-    padding: 9rem 5rem;
-    gap: 7rem;
     line-height: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
   .skill-image{
    height: auto;
   }
-  
-
-
+  .skills{
+    margin-top: 5rem;
+  }
+  .skill-group{
+    margin-bottom: 2rem;
+  }
+  .skills-info p{
+    margin-top: 1rem;
+  }
 }
-
+  
 
 @media (max-width: 768px){
 

@@ -21,13 +21,16 @@ function Landing (){
         delay: 700,
 
         to: {
-          opacity:0.9,
+          opacity:1,
           transform: 'rotateZ(-31deg)',
+
         },
+
         config: {
           mass: 1.5,
           tension: 50,
           friction: 8,
+
           
 
 
@@ -35,33 +38,35 @@ function Landing (){
       });
 
         return (
-            <div className="homepage">
+            <div>
                 <HeadInner/>
                 <Navbar/>
                     <div className="home-image">
                             <div className="home-inner">
                                 <div className="home-text">
-                                    <p className="large">Hi,</p>
-                                    <p className="large-name">I'm Robert,</p>
-                                    <p className="large-name">web developer.</p>
+                                    <h1 className="large">Hi,</h1>
+                                    <h1 className="large-name">I'm Robert,</h1>
+                                    <h1 className="large-name name-title">web developer.</h1>
                                     <p className="paragraph">I'm an enthusiastic software developer, that covers the full-stack development of a website and aims to build responsive and engaging products.</p>
                                     <div className="button-div">
                                         <Link href="/work"><button className="work-button">My Work</button></Link>
                                     </div>
                                     
                                 </div>
+
                                 <animated.div
                                     style={spring}
->
-                                            <animated.div                                         class="large-logo-test"
 
+>
+                                            <animated.div                                         
                                             onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
                                             onMouseLeave={() => set({ xys: [0, 0, 1] })}
                                             style={{ transform: props.xys.interpolate(trans) }} >
-                                                <img src="/RLogo.png" alt=".robert"  className="big-logo"/>
+                                                <img src="/RLogo.png" alt=".robert"  className="large-logo"/>
 
                                             </animated.div>
                                         </animated.div>
+
 
                             </div>    
                         </div>

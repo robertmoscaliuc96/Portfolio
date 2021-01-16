@@ -37,22 +37,6 @@
   img {
     width: 100%;
   }
-  /* FONT-SIZE SCHEME
-
-  font-size1: calc(25px + 3vw);
-  font-size2: calc(25px + 3vw);
-  font-size3: calc(25px + 3vw);
-
-  font-weight1: 150;
-  font-weight2: 150;
-  font-weight3: 150;
-
-  margin-top1: ;
-  margin-left: ;
-  */
-
-
-
 
 
 /* Utilities */
@@ -78,11 +62,6 @@
   height: 100%;
 }
 
-.homepage {
-  max-width: 100%;
-  margin: auto;
-  overflow: hidden;
-}
 
 /* Logo */
 
