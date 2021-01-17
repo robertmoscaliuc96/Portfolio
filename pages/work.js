@@ -49,6 +49,7 @@ function Work(){
                                 <h1 className="card-title">Cook At Home</h1>
                                 <div className="card-description">
                                 <p className="card-description">Full-stack application using MERN stack where users share their recipes and find other recipes ideas using Edamame API.</p>
+                                <p className="card-description">Project In progress</p>
                                 <div className="card-tech">
                                     <p className="card-technologies">React</p>
                                     <p className="card-technologies">NodeJS</p>
