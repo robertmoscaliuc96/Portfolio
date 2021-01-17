@@ -9,11 +9,11 @@
 /* About */
 .about-inner{
     background: url('../public/background5.png') no-repeat center top/cover;
+    height: 100vh;
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
   .about-text{
-    
     margin-top: 15rem;
     margin-left: 10rem;
     margin-right: 15rem;
@@ -27,6 +27,7 @@
   .paragraph-about{
     font-weight: 300;
     line-height: 2rem;
+    font-size: calc(10px + 1vw);
     word-spacing: 5px;
     animation: para 3s 1;
     margin-bottom: 2rem;
@@ -72,50 +73,40 @@
 
   .contact-actions{
     display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    gap: 7rem;
+    margin-bottom: 4rem;
     animation: para 4s 1;
     animation-duration: 3400ms;
 
   }
-  
-  .contact-button{
-    margin-top: 1rem;
-    margin-left: 1rem;
-  }
+
   .about-icon{
-    margin-top: 4rem;
-    margin-right: 5rem;
+    margin-top: 2rem;
     color: white;
   }
 
 
   .about-icon i{
-    font-size: 5rem;
+    font-size: calc(45px + 1vw);
     color: white;
   }
   .about-icon i:hover{
-    font-size: 5rem;
     color: var(--dif-color);
   }
   .fa-paper-plane{
-    margin-right: 3rem;
+    margin-right: 2rem;
   }
 
   .icon-about {
     font-size: 4rem;
-    position: relative;
-    justify-content: center;
-    align-items: center;
     color: white;
-    margin-left: 3.5rem;
+    margin-left:1.5rem;
   }
   .about-icon-title{
     font-size: 2rem;
     font-weight: 300;
     text-align: center;
+    font-size: calc(10px + 1vw);
 
 
   }
@@ -131,8 +122,9 @@
     .map-inner{
       display: none;
     }
+
     .about-text{
-      margin: 30% 5%;
+      margin: 10rem 4rem;
     }
     .large-about{
       font-size: 3.2rem;
@@ -144,15 +136,6 @@
     .about-inner{
       line-height: 2.5rem;
     }
-    .map-inner{
-      width: 5rem;
-    }  
-    .contact-form input, textarea {
-      width: 90%;
-    }
-    .contact-form textarea {
-      width: 90%;
-    }
 
     .skills-info{
       line-height: 1.1rem;
@@ -160,13 +143,18 @@
     .contact-button{
       margin-left: 1rem;
     }
+    .contact-actions{
+      gap: 3rem;
+    }
   
   }
-  @media (min-width: 480px){
+  @media (max-width: 1280px){
   
-    .skills-info{
-      line-height: 1rem;
+    .map-inner{
+      display: none;
     }
-    
+    .about-icon{
+      gap: 0;
+    }
   }
   

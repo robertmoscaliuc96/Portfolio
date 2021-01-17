@@ -5,7 +5,7 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     position: absolute;
-    z-index: 1;
+    z-index: 4;
     height: 100%;
     background-color: var(--dark-color);
     animation: para 2s 1;

@@ -137,7 +137,13 @@
   .skills-info{
     line-height: 1rem;
   }
-
+  .skill-inner{
+    margin-left: 4rem;
+  }
+  .language{
+    padding: 0;
+    margin-top: 10rem;
+  }
 
 }
 @media (min-width: 480px){

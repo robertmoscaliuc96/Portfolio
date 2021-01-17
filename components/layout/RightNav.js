@@ -13,7 +13,7 @@ const Ul = styled.ul`
       color:#62CBE7;
   }
 
-  @media (max-width: 968px) {
+  @media (max-width: 768px) {
       .navbar{
         display:flex;
         flex-flow: column nowrap;
@@ -44,6 +44,11 @@ const Ul = styled.ul`
       }
       .active{
    color:var(--dif-color);
+ }
+ @media (max-width: 768px) {
+   .navbar{
+     gap:.1rem;
+   }
  }
 
     

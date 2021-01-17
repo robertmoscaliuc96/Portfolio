@@ -23,6 +23,10 @@
   animation: para 3s 1;
   animation-duration: 2600ms;
 }
+.work-title::first-letter{
+  color: var(--dif-color);
+
+}
 
   
   .card {
@@ -193,6 +197,9 @@
   }
   .card{
     max-width: 320px;
+  }
+  .work-title{
+    margin-top: 5rem;
   }
 
   .card-title{
