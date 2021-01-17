@@ -1,6 +1,6 @@
 
 .about-image{
-    background: url('../public/background5.png') no-repeat center top/cover;
+    
     width: 100%;
     height: 100vh;
   }
@@ -8,17 +8,15 @@
 
 /* About */
 .about-inner{
+    background: url('../public/background5.png') no-repeat center top/cover;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    transition-duration: 300ms;
-    animation: para 2s 1;
-    -webkit-animation: para 3s 1;
-    
   }
   .about-text{
+    
     margin-top: 15rem;
     margin-left: 10rem;
-    margin-right: 5rem;
+    margin-right: 15rem;
     color: var(--text-color);
   }
   .map-inner{
@@ -30,19 +28,20 @@
     font-weight: 300;
     line-height: 2rem;
     word-spacing: 5px;
-    animation: para 2s 1;
-    margin-left: ;
+    animation: para 3s 1;
     margin-bottom: 2rem;
-  
-  
   }
+
   .about-text h3{
     color: var(--dif-color);
   }
   .large-about{
-    color:var(--dif-color);
     padding-bottom: 2rem;
- 
+    animation: para 2s 1; 
+  }
+  .large-about::first-letter{
+    color: var(--dif-color);
+    padding-bottom: 2rem;
   }
   
   
@@ -56,6 +55,9 @@
     border-bottom-right-radius: 18px;
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
+    animation: para 3s 1;
+    animation-duration: 3000ms;
+  
   }
   .marker-name {
     display: flex;
@@ -67,42 +69,55 @@
     color: var(--dif-color);
     font-size: 1.4rem;
   }
-  .contact-form{
-    margin-top: 5%;
-  }
 
-  .contact-form input, textarea {
-    border: none;
-    background-color: var(--dark);
-    border-bottom: 2px solid var(--dif-color);
-    color: var(--dif-color);
-    margin: 1rem 1rem;
-    width: 100%;
-    height: 3rem;
-    font-size: 1.6rem;
-    padding-left: 0.6rem;
-    padding-top: 0.2rem;
-    transition-duration: 300ms;
-    animation: para 2s 1;
-    -webkit-animation: para 3s 1;
+  .contact-actions{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    animation: para 4s 1;
+    animation-duration: 3400ms;
+
   }
-  .contact-form textarea{
-    margin: 1rem 1rem;
-    width: 100%;
-    height: 8rem;
-    font-size: 1.6rem;
-    resize: none;
-  }
+  
   .contact-button{
     margin-top: 1rem;
     margin-left: 1rem;
   }
   .about-icon{
-    font-size: 4rem;
+    margin-top: 4rem;
+    margin-right: 5rem;
+    color: white;
   }
-  .about-group{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
+
+  .about-icon i{
+    font-size: 5rem;
+    color: white;
+  }
+  .about-icon i:hover{
+    font-size: 5rem;
+    color: var(--dif-color);
+  }
+  .fa-paper-plane{
+    margin-right: 3rem;
+  }
+
+  .icon-about {
+    font-size: 4rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: 3.5rem;
+  }
+  .about-icon-title{
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+
+
   }
   
 

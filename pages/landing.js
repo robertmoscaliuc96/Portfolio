@@ -9,6 +9,7 @@ const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWid
 const trans = (x, y, s) => `perspective(1800px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
 
+
 function Landing (){
     const [props, set] = useSpring(() => ({xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
 

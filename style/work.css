@@ -20,8 +20,8 @@
   margin-top: 2rem;
   margin-bottom: 4rem;
   transition-duration: 400ms;
-  animation: text 2s 1;
-  -webkit-animation: para 2s 1;
+  animation: para 3s 1;
+  animation-duration: 2600ms;
 }
 
   
@@ -38,7 +38,7 @@
     scroll-snap-align: start;
     clear: both;
     transition-duration: 700ms;
-    animation: para 2s 1;
+    animation: para 3s 1;
   }
   
   

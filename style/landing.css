@@ -18,18 +18,28 @@
   padding: 15rem 10rem;
   color: var(--text-color);
   width: 80%;
-  transition-duration: 300ms;
-  animation: text 1s 1;
-  -webkit-animation: para 2s 1;
 }
+.large{
+  animation: para 2s 1;
+  animation-duration: 2200ms;
+}
+.large-name{
+  animation: para 3s 1;
+  animation-duration: 2700ms;
+}
+.name-title{
+  animation: para 4s 1;
+  animation-duration: 3200ms;
+}
+
 .paragraph{
   font-weight: 300;
   line-height: 1.6;
   word-spacing: 5px;
-  animation: para 2s 1;
-  transition-duration: 300ms;
   padding-right: 15%;
-  -webkit-animation: para 3s 1;
+  animation: para 5s 1;
+  animation-duration: 3900ms;
+
 }
 
 .large-logo{
@@ -57,9 +67,9 @@
   padding: 0.4rem 2rem;
   border: 2px solid var(--dif-color);
   cursor: pointer;
-  animation: para 2s 1;
-  -webkit-animation: para 3s 1;
-  transition-duration: 500ms;
+  animation: para 4s 1;
+  -webkit-animation: para 4s 1;
+  transition-duration: 900ms;
 }
 
 .work-button:hover, 
