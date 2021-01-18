@@ -8,6 +8,10 @@ const Headinner = () =>(
     <div className="homepage">
         <Head>
             <title>Robert</title>
+            <meta charset="UTF-8"></meta>
+            <meta name="description" content="Junior Web Developer, Full stack"/>
+            <meta name="keywords" content="Junior, JavaScript, React, Node, HTML, CSS, Front-end, Back-end"/>
+            <meta name="author" content="Robert Moscaliuc"/>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             <link rel="icon" type="image/png" sizes="16x16" href="/favicon-32x32.png" />
             <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"></link>
