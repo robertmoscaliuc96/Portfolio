@@ -72,7 +72,6 @@
   .skill-icon{
     display: grid;
     grid-template-rows: repeat(1fr);
-    position: relative;
     left: 1rem;
     animation: para 4s 1;
     animation-duration: 2600ms;
