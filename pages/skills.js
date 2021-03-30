@@ -12,7 +12,7 @@ const Skills = () =>(
                         <h1 className="large-skill">Skills.</h1>
                          <div className="paragraph-skill">
                             <h3>Programming language</h3>
-                            <p> JavaScript, HTML5, CSS3, Java, Python</p>
+                            <p> JavaScript, HTML5, CSS3</p>
                             <h3>Libraries / Framework</h3>
                             <p> React, NodeJS, Express, MongoDB, SQLite, Bootstrap, JWT, Next.js, Redux, React-Spring </p>
                             <h3>Others</h3>
